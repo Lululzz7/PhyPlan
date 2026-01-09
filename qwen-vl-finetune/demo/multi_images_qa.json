@@ -1,0 +1,14 @@
+[
+  {
+    "data_path": "qwen-vl-finetune",
+    "image": [
+      "demo/images/10095.png",
+      "demo/images/10149.png"
+    ],
+    "conversations": [
+      { "from": "human", "value": "<image>\n<image>\n请比较两张图：两张图的趋势是否一致？" },
+      { "from": "gpt",   "value": "总体趋势一致。" }
+    ]
+  }
+]
+

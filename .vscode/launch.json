@@ -1,0 +1,78 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug: train_pc_multidata_resume_proj.sh (terminal)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "/bin/bash -lc 'bash /e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/qwen-vl-finetune/scripts/train_pc_multidata_resume_proj.sh'",
+      "cwd": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main",
+      "env": {
+        "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+
+        "MODEL": "/e2e-data/embodied-research-data/large_model/huggingface/hub/Qwen3VL-8B",
+        "OUT": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/outputs/pc_multidata_resume_proj_single_debug",
+        "SAVE_PROJ": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/outputs/pc_multidata_resume_proj_single_debug/point_proj.bin",
+        "PROJ_CKPT": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/outputs/pc_multidata_resume_proj_8gpu/point_proj.bin",
+
+        "POINT_BACKBONE": "PointBERT",
+        "POINT_CFG": "PointTransformer_8192point_2layer",
+        "POINT_USE_COLOR": "1",
+        "POINT_BACKBONE_CKPT": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/checkpoints/point_bert_v1.2.pt",
+
+        "BATCH_PER_DEVICE": "1",
+        "EPOCHS": "1",
+        "LR": "2e-5",
+        "BF16": "1",
+        "GRAD_CKPT": "1",
+        "GRAD_ACCUM_STEPS": "16",
+        "LR_SCHEDULER": "cosine",
+        "WARMUP_STEPS": "0",
+        "WARMUP_RATIO": "0.03",
+
+        "SCANQA_JSON": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/qwen-vl-finetune/demo/pointcloud_qa_scanqa_train.json",
+        "SCENE_CAPTION_JSON": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/qwen-vl-finetune/demo/pointcloud_qa_scene_caption.json",
+        "SCENE30K_JSON": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/qwen-vl-finetune/demo/pointcloud_qa_scene30k.json",
+        "SQA3D_JSON": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/qwen-vl-finetune/demo/pointcloud_qa_sqa3d.json",
+        "COMBINED_JSON": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/outputs/pc_multidata_resume_proj_single_debug/pointcloud_qa_combined.json"
+      }
+    },
+    {
+      "name": "Debug Python: train_qwen_pointcloud.py",
+      "type": "python",
+      "request": "launch",
+      "program": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/qwen-vl-finetune/qwenvl/train/train_qwen_pointcloud.py",
+      "args": [
+        "--model", "/e2e-data/embodied-research-data/large_model/huggingface/hub/Qwen3VL-8B",
+        "--train-file", "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/outputs/pc_multidata_resume_proj_single_debug/pointcloud_qa_combined.json",
+        "--output-dir", "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/outputs/pc_multidata_resume_proj_single_debug",
+        "--epochs", "1",
+        "--batch-size", "1",
+        "--lr", "2e-5",
+        "--grad-accum-steps", "16",
+        "--lr-scheduler", "cosine",
+        "--warmup-steps", "0",
+        "--warmup-ratio", "0.03",
+        "--save-every-steps", "500",
+        "--save-total-limit", "0",
+        "--point-backbone", "PointBERT",
+        "--point-backbone-config", "PointTransformer_8192point_2layer",
+        "--point-proj-ckpt", "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/outputs/pc_multidata_resume_proj_8gpu/point_proj.bin",
+        "--save-point-proj-ckpt", "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/outputs/pc_multidata_resume_proj_single_debug/point_proj.bin",
+        "--save-point-proj-interval", "500",
+        "--train-point-projector",
+        "--point-use-color",
+        "--point-backbone-ckpt", "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main/checkpoints/point_bert_v1.2.pt",
+        "--bf16",
+        "--grad-ckpt"
+      ],
+      "env": {
+        "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+        "PYTHONPATH": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main"
+      },
+      "cwd": "/e2e-data/evad-tech-vla/luzheng/Qwen3-VL-main",
+      "justMyCode": false,
+      "console": "integratedTerminal"
+    }
+  ]
+}

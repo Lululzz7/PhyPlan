@@ -1,0 +1,11 @@
+[
+  {
+    "data_path": "qwen-vl-finetune",
+    "image": "demo/images/10095.png",
+    "conversations": [
+      { "from": "human", "value": "<image>\n请根据图片回答：图中是否有折线图？" },
+      { "from": "gpt",   "value": "是的，有折线图。" }
+    ]
+  }
+]
+

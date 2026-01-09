@@ -1,0 +1,15 @@
+=== Shard: point_proj.bin ===
+total keys: 6
+total params (elements): 10,886,144
+estimated transformer layers: 0
+has point_proj: True
+prefix stats (top 10):
+  point_proj: 6
+sample keys (up to 50):
+   point_proj.0.weight (1024, 384)
+   point_proj.0.bias (1024,)
+   point_proj.2.weight (2048, 1024)
+   point_proj.2.bias (2048,)
+   point_proj.4.weight (4096, 2048)
+   point_proj.4.bias (4096,)
+
