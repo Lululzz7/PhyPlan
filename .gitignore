@@ -1,1 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# Virtual environments
 .venv/
+venv/
+
+# Editor / tooling
+.vscode/
+.claude/
+
+# OS files
+.DS_Store
+
+# Generated datasets / artifacts (do not commit)
+causal_spafa_plan_dataset*/
+generated_plans_output_*/
+__locks__/
