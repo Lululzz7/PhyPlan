@@ -1,0 +1,74 @@
+{
+    "per_step": [
+        {
+            "step_id": 1,
+            "indices": [
+                3
+            ],
+            "non_decreasing": true
+        },
+        {
+            "step_id": 2,
+            "indices": [
+                4
+            ],
+            "non_decreasing": true
+        },
+        {
+            "step_id": 3,
+            "indices": [
+                8
+            ],
+            "non_decreasing": true
+        },
+        {
+            "step_id": 4,
+            "indices": [
+                11
+            ],
+            "non_decreasing": true
+        },
+        {
+            "step_id": 5,
+            "indices": [
+                21
+            ],
+            "non_decreasing": true
+        },
+        {
+            "step_id": 6,
+            "indices": [
+                44
+            ],
+            "non_decreasing": true
+        },
+        {
+            "step_id": 7,
+            "indices": [
+                48
+            ],
+            "non_decreasing": true
+        }
+    ],
+    "across_steps": {
+        "ordered_step_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "min_indices": [
+            3,
+            4,
+            8,
+            11,
+            21,
+            44,
+            48
+        ],
+        "temporal_order_ok": true
+    }
+}

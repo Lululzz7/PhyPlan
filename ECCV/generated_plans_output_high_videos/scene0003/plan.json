@@ -1,0 +1,140 @@
+{
+    "scene_description": "The scene is a small office kitchenette or breakroom. It is equipped with standard amenities including wooden cabinetry, dark countertops, a stainless steel sink, a black refrigerator, a microwave situated in a built-in shelf, and a freestanding water cooler. The room has a cork-tile floor and white walls. The space is in a state of mild disarray: a grey trash can is overflowing with paper towels and cups, a stray paper towel sits on the counter beside it, and a backpack is on the floor near the doorway, partially obstructing the entrance. The room appears functional but requires cleaning and organization to be fully usable and tidy.",
+    "key_objects_for_planning": [
+        "refrigerator",
+        "countertop",
+        "sink",
+        "microwave",
+        "trash can",
+        "water cooler",
+        "cabinetry",
+        "door",
+        "backpack"
+    ],
+    "high_level_goal": "Restore the kitchenette to a clean and orderly state by clearing obstructions, managing trash, and cleaning key surfaces.",
+    "steps": [
+        {
+            "step_id": 1,
+            "step_goal": "Relocate the backpack from the doorway.",
+            "rationale": "The backpack on the floor is a trip hazard and obstructs the primary path into and out of the room. Removing it first ensures safety and clear access for all subsequent tasks.",
+            "navigation_and_manipulation": "I will go to the area by the door where the backpack is located. I will grasp the backpack's top handle, lift it, and move it to a position against the wall, ensuring it no longer obstructs the walkway.",
+            "preconditions": [
+                "The agent is inside the kitchenette.",
+                "The backpack is on the floor near the door."
+            ],
+            "expected_effects": [
+                "The main pathway into the kitchenette is clear of obstructions.",
+                "The backpack is in a safer, non-obstructive location."
+            ],
+            "failure_handling": {
+                "reason": "The backpack is too heavy to lift or has no clear grasping point like a handle.",
+                "recovery_strategy": "If the backpack is too heavy, I will attempt to push it along the floor, sliding it against the nearest wall to clear the path. I will then send a notification that a heavy item needs to be moved properly."
+            }
+        },
+        {
+            "step_id": 2,
+            "step_goal": "Consolidate loose trash into the main bin.",
+            "rationale": "There is a piece of loose trash on the counter. Placing it into the main bin before removing the bag ensures all waste is collected in a single, efficient step.",
+            "navigation_and_manipulation": "I will navigate to the counter space next to the overflowing trash can. I will grasp the stray paper towel and place it on top of the other items inside the trash can.",
+            "preconditions": [
+                "A stray paper towel is on the counter.",
+                "The trash can is accessible."
+            ],
+            "expected_effects": [
+                "The countertop is clear of loose trash.",
+                "All visible waste is now consolidated within the trash can."
+            ],
+            "failure_handling": {
+                "reason": "The paper towel is dropped on the floor during transfer.",
+                "recovery_strategy": "I will locate the dropped paper towel on the floor, pick it up, and re-attempt to place it in the trash can."
+            }
+        },
+        {
+            "step_id": 3,
+            "step_goal": "Remove the full trash bag from the bin.",
+            "rationale": "The primary source of mess is the overflowing trash can. Removing the full bag is the most critical step in cleaning the area.",
+            "navigation_and_manipulation": "I will position myself in front of the trash can. I will grasp the exposed edges of the plastic liner, carefully lift the full bag vertically out of the can, and tie the top of the bag to seal it.",
+            "preconditions": [
+                "All loose trash has been consolidated (Step 2 complete).",
+                "The trash can contains a full, lined bag."
+            ],
+            "expected_effects": [
+                "The full trash bag is sealed and removed from the can.",
+                "The trash can is now empty but unlined."
+            ],
+            "failure_handling": {
+                "reason": "The plastic liner tears during removal due to weight or sharp objects, causing some contents to spill.",
+                "recovery_strategy": "I will stop lifting and set the torn bag gently on the floor. I will retrieve a new, larger bag, place the entire torn bag inside it to contain the mess, and then manually pick up any spilled items and add them to the new bag."
+            }
+        },
+        {
+            "step_id": 4,
+            "step_goal": "Dispose of the sealed trash bag.",
+            "rationale": "The removed bag of waste must be taken to a designated central disposal area to complete the trash removal process.",
+            "navigation_and_manipulation": "While holding the sealed trash bag, I will exit the kitchenette through the door, proceed to the building's designated waste disposal site, and place the bag into the appropriate large receptacle or dumpster.",
+            "preconditions": [
+                "The agent is holding a sealed bag of trash (Step 3 complete).",
+                "The path to the disposal area is known."
+            ],
+            "expected_effects": [
+                "The kitchenette and its immediate vicinity are free of the old trash."
+            ],
+            "failure_handling": {
+                "reason": "The agent loses its grip and drops the trash bag in the hallway.",
+                "recovery_strategy": "I will pause my navigation, re-secure my grasp on the trash bag, and continue to the disposal area. After disposal, I will return to the drop location to scan for and clean any spills."
+            }
+        },
+        {
+            "step_id": 5,
+            "step_goal": "Install a new liner in the trash can.",
+            "rationale": "To restore the trash can to a functional state, a new plastic liner must be installed.",
+            "navigation_and_manipulation": "I will return to the kitchenette. I will navigate to the cabinet under the sink, which is the standard location for supplies. I will open the cabinet, retrieve a new trash liner, go to the empty trash can, and fit the new liner inside it.",
+            "preconditions": [
+                "The agent is in the kitchenette.",
+                "The trash can is empty."
+            ],
+            "expected_effects": [
+                "The trash can is lined and ready for use."
+            ],
+            "failure_handling": {
+                "reason": "There are no new trash liners in the supply cabinet under the sink.",
+                "recovery_strategy": "I will close the cabinet door and log a maintenance request or send a notification to a human operator stating that trash liners are out of stock for the kitchenette, then proceed to the next step."
+            }
+        },
+        {
+            "step_id": 6,
+            "step_goal": "Wipe down the countertops.",
+            "rationale": "Surfaces, especially near the trash area and sink, may be soiled. Wiping them down ensures the kitchenette is hygienic and visually clean.",
+            "navigation_and_manipulation": "I will go to the sink, acquire a cleaning cloth, and moisten it. I will then perform a 'surface wipe' action along the entire length of the dark countertop, paying special attention to the area where the trash can was and the area around the sink.",
+            "preconditions": [
+                "The countertops are clear of objects and loose debris.",
+                "A cleaning cloth is available."
+            ],
+            "expected_effects": [
+                "The countertops are clean and free of spills or grime."
+            ],
+            "failure_handling": {
+                "reason": "A persistent stain or sticky residue is detected that cannot be removed with a standard wipe.",
+                "recovery_strategy": "I will attempt to wipe the area again with more focused pressure. If the stain remains, I will record its location and add a note to the maintenance log about a stain requiring specialized cleaning."
+            }
+        },
+        {
+            "step_id": 7,
+            "step_goal": "Wipe the exterior of the microwave.",
+            "rationale": "The microwave is a high-touch appliance that accumulates fingerprints and smudges. Cleaning its exterior is a final touch to ensure the entire space looks clean.",
+            "navigation_and_manipulation": "With the cleaning cloth still in hand, I will move to the microwave. I will perform a 'surface wipe' action on the front glass door and control panel of the microwave.",
+            "preconditions": [
+                "The agent is holding a reasonably clean cloth (Step 6 complete)."
+            ],
+            "expected_effects": [
+                "The microwave exterior is clean and free of smudges.",
+                "The high-level goal is achieved."
+            ],
+            "failure_handling": {
+                "reason": "The cleaning cloth becomes too dirty after wiping the counters to be effective on the microwave.",
+                "recovery_strategy": "I will navigate back to the sink, thoroughly rinse and wring out the cleaning cloth, and then return to the microwave to complete the wiping task."
+            }
+        }
+    ],
+    "sample_frames_dir": "/e2e-data/evad-tech-vla/luzheng/ICML/generated_plans_output_high_videos/scene0003/sampled_frames"
+}

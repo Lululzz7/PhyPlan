@@ -1,0 +1,158 @@
+{
+    "steps": [
+        {
+            "step_id": 1,
+            "critical_frames": [
+                {
+                    "frame_index": 3,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "pan is on top of stovetop burner",
+                        "chopped celery is contained within pan"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 2,
+            "critical_frames": [
+                {
+                    "frame_index": 4,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "spatula head is in contact with and moving the chopped celery",
+                        "left hand is gripping pan handle"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 3,
+            "critical_frames": [
+                {
+                    "frame_index": 8,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "right hand is holding red onion piece",
+                        "red onion piece is positioned above cutting board"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 4,
+            "critical_frames": [
+                {
+                    "frame_index": 11,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "knife blade is in contact with and perpendicular to the red onion",
+                        "left hand is stabilizing the red onion against the cutting board"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 5,
+            "critical_frames": [
+                {
+                    "frame_index": 21,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "kettle opening is positioned directly under the faucet nozzle",
+                        "a stream of water is flowing from the faucet into the kettle"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 6,
+            "critical_frames": [
+                {
+                    "frame_index": 44,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "plate is held by both hands above the placemat",
+                        "placemat is flat on the table surface"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 7,
+            "critical_frames": [
+                {
+                    "frame_index": 48,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "fingers of the left hand are gripping the stove knob",
+                        "spatula is actively stirring vegetables in the pan"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        }
+    ]
+}

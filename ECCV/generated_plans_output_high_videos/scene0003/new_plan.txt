@@ -1,0 +1,161 @@
+================================================================================
+Task Plan: Restore the kitchenette to a clean and orderly state by clearing obstructions, managing trash, and cleaning key surfaces.
+================================================================================
+
+
+--- Step 1: Relocate the backpack from the doorway. ---
+
+  [Rationale]
+  The backpack on the floor is a trip hazard and obstructs the primary path into and out of the room. Removing it first ensures safety and clear access for all subsequent tasks.
+
+  [Navigation & Manipulation]
+  I will go to the area by the door where the backpack is located. I will grasp the backpack's top handle, lift it, and move it to a position against the wall, ensuring it no longer obstructs the walkway.
+
+  [Preconditions]
+  - The agent is inside the kitchenette.
+  - The backpack is on the floor near the door.
+
+
+  [Expected Effects]
+  - The main pathway into the kitchenette is clear of obstructions.
+  - The backpack is in a safer, non-obstructive location.
+
+
+  [Failure Handling]
+  - Reason: The backpack is too heavy to lift or has no clear grasping point like a handle.
+  - Recovery: If the backpack is too heavy, I will attempt to push it along the floor, sliding it against the nearest wall to clear the path. I will then send a notification that a heavy item needs to be moved properly.
+
+
+--- Step 2: Consolidate loose trash into the main bin. ---
+
+  [Rationale]
+  There is a piece of loose trash on the counter. Placing it into the main bin before removing the bag ensures all waste is collected in a single, efficient step.
+
+  [Navigation & Manipulation]
+  I will navigate to the counter space next to the overflowing trash can. I will grasp the stray paper towel and place it on top of the other items inside the trash can.
+
+  [Preconditions]
+  - A stray paper towel is on the counter.
+  - The trash can is accessible.
+
+
+  [Expected Effects]
+  - The countertop is clear of loose trash.
+  - All visible waste is now consolidated within the trash can.
+
+
+  [Failure Handling]
+  - Reason: The paper towel is dropped on the floor during transfer.
+  - Recovery: I will locate the dropped paper towel on the floor, pick it up, and re-attempt to place it in the trash can.
+
+
+--- Step 3: Remove the full trash bag from the bin. ---
+
+  [Rationale]
+  The primary source of mess is the overflowing trash can. Removing the full bag is the most critical step in cleaning the area.
+
+  [Navigation & Manipulation]
+  I will position myself in front of the trash can. I will grasp the exposed edges of the plastic liner, carefully lift the full bag vertically out of the can, and tie the top of the bag to seal it.
+
+  [Preconditions]
+  - All loose trash has been consolidated (Step 2 complete).
+  - The trash can contains a full, lined bag.
+
+
+  [Expected Effects]
+  - The full trash bag is sealed and removed from the can.
+  - The trash can is now empty but unlined.
+
+
+  [Failure Handling]
+  - Reason: The plastic liner tears during removal due to weight or sharp objects, causing some contents to spill.
+  - Recovery: I will stop lifting and set the torn bag gently on the floor. I will retrieve a new, larger bag, place the entire torn bag inside it to contain the mess, and then manually pick up any spilled items and add them to the new bag.
+
+
+--- Step 4: Dispose of the sealed trash bag. ---
+
+  [Rationale]
+  The removed bag of waste must be taken to a designated central disposal area to complete the trash removal process.
+
+  [Navigation & Manipulation]
+  While holding the sealed trash bag, I will exit the kitchenette through the door, proceed to the building's designated waste disposal site, and place the bag into the appropriate large receptacle or dumpster.
+
+  [Preconditions]
+  - The agent is holding a sealed bag of trash (Step 3 complete).
+  - The path to the disposal area is known.
+
+
+  [Expected Effects]
+  - The kitchenette and its immediate vicinity are free of the old trash.
+
+
+  [Failure Handling]
+  - Reason: The agent loses its grip and drops the trash bag in the hallway.
+  - Recovery: I will pause my navigation, re-secure my grasp on the trash bag, and continue to the disposal area. After disposal, I will return to the drop location to scan for and clean any spills.
+
+
+--- Step 5: Install a new liner in the trash can. ---
+
+  [Rationale]
+  To restore the trash can to a functional state, a new plastic liner must be installed.
+
+  [Navigation & Manipulation]
+  I will return to the kitchenette. I will navigate to the cabinet under the sink, which is the standard location for supplies. I will open the cabinet, retrieve a new trash liner, go to the empty trash can, and fit the new liner inside it.
+
+  [Preconditions]
+  - The agent is in the kitchenette.
+  - The trash can is empty.
+
+
+  [Expected Effects]
+  - The trash can is lined and ready for use.
+
+
+  [Failure Handling]
+  - Reason: There are no new trash liners in the supply cabinet under the sink.
+  - Recovery: I will close the cabinet door and log a maintenance request or send a notification to a human operator stating that trash liners are out of stock for the kitchenette, then proceed to the next step.
+
+
+--- Step 6: Wipe down the countertops. ---
+
+  [Rationale]
+  Surfaces, especially near the trash area and sink, may be soiled. Wiping them down ensures the kitchenette is hygienic and visually clean.
+
+  [Navigation & Manipulation]
+  I will go to the sink, acquire a cleaning cloth, and moisten it. I will then perform a 'surface wipe' action along the entire length of the dark countertop, paying special attention to the area where the trash can was and the area around the sink.
+
+  [Preconditions]
+  - The countertops are clear of objects and loose debris.
+  - A cleaning cloth is available.
+
+
+  [Expected Effects]
+  - The countertops are clean and free of spills or grime.
+
+
+  [Failure Handling]
+  - Reason: A persistent stain or sticky residue is detected that cannot be removed with a standard wipe.
+  - Recovery: I will attempt to wipe the area again with more focused pressure. If the stain remains, I will record its location and add a note to the maintenance log about a stain requiring specialized cleaning.
+
+
+--- Step 7: Wipe the exterior of the microwave. ---
+
+  [Rationale]
+  The microwave is a high-touch appliance that accumulates fingerprints and smudges. Cleaning its exterior is a final touch to ensure the entire space looks clean.
+
+  [Navigation & Manipulation]
+  With the cleaning cloth still in hand, I will move to the microwave. I will perform a 'surface wipe' action on the front glass door and control panel of the microwave.
+
+  [Preconditions]
+  - The agent is holding a reasonably clean cloth (Step 6 complete).
+
+
+  [Expected Effects]
+  - The microwave exterior is clean and free of smudges.
+  - The high-level goal is achieved.
+
+
+  [Failure Handling]
+  - Reason: The cleaning cloth becomes too dirty after wiping the counters to be effective on the microwave.
+  - Recovery: I will navigate back to the sink, thoroughly rinse and wring out the cleaning cloth, and then return to the microwave to complete the wiping task.
+

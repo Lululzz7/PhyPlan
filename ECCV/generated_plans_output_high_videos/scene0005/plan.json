@@ -1,0 +1,116 @@
+{
+    "scene_description": "The scene is a modern study or small library common area, characterized by its functional furniture and layout. The room has striped carpeting and a combination of light gray, tan, and lime green walls. A large, dark wood table with an integrated power outlet serves as the centerpiece, paired with a long, built-in wooden bench on one side. Several bright green chairs with patterned cushions are positioned around the table, some tucked in and some pulled out. Against a tan wall, a large television is mounted above a small wooden cabinet. In one corner, near a doorway, stands a wheeled library book cart filled with textbooks. The area appears organized but configured for individual or small group work at the table, not for a presentation.",
+    "key_objects_for_planning": [
+        "large study table",
+        "built-in wooden bench",
+        "green chairs",
+        "library book cart",
+        "wall-mounted television",
+        "small cabinet",
+        "doorway"
+    ],
+    "high_level_goal": "Reconfigure the study area to prepare for a group presentation using the wall-mounted television.",
+    "steps": [
+        {
+            "step_id": 1,
+            "step_goal": "Relocate the book cart to clear the presentation viewing area.",
+            "rationale": "The book cart is currently obstructing the space where audience chairs will be placed. Moving it first creates a clear and safe area to reconfigure the furniture for presentation viewing.",
+            "navigation_and_manipulation": "I will start by moving towards the corner with the doorway to approach the library book cart. I'll grasp the cart's frame and carefully push it along the wall, positioning it neatly in the corner next to the door to maximize open space.",
+            "preconditions": [
+                "Agent is located within the study area.",
+                "The book cart is in its initial position near the doorway."
+            ],
+            "expected_effects": [
+                "The book cart is moved to a non-obstructive corner position.",
+                "The central floor space is now clear for chair rearrangement."
+            ],
+            "failure_handling": {
+                "reason": "One of the cart's wheels gets stuck on the carpet seam, causing the cart to tilt and books to become unstable.",
+                "recovery_strategy": "I will stop pushing immediately to stabilize the cart. Then, I will slightly pull the cart back and re-align my push to navigate over the seam at a better angle, proceeding with reduced speed."
+            }
+        },
+        {
+            "step_id": 2,
+            "step_goal": "Move the first green chair to begin forming an audience row.",
+            "rationale": "To create an audience viewing area, the chairs must be moved from their positions at the table and reoriented to face the television screen.",
+            "navigation_and_manipulation": "I will navigate to the green chair positioned at the end of the table near the small cabinet. I will grasp the chair, pull it away from the table, turn it approximately 90 degrees to face the television, and place it down to establish the first seat in the audience row.",
+            "preconditions": [
+                "The main floor area has been cleared of the book cart (Step 1 complete)."
+            ],
+            "expected_effects": [
+                "One chair is successfully repositioned to face the television, starting the audience row."
+            ],
+            "failure_handling": {
+                "reason": "The chair is heavier than expected, causing difficulty in lifting or turning it smoothly.",
+                "recovery_strategy": "I will use a push/slide technique instead of lifting. I will lower my grasp point and apply steady force to slide the chair across the carpet into the desired position and orientation."
+            }
+        },
+        {
+            "step_id": 3,
+            "step_goal": "Move the second green chair into position next to the first.",
+            "rationale": "Building the audience row requires systematically moving each chair and aligning it with the previous ones to create an organized seating arrangement.",
+            "navigation_and_manipulation": "I will approach the next green chair at the table. I'll grasp it, move it back, and place it directly beside the first audience chair. I must ensure it is aligned in the same direction, facing the television.",
+            "preconditions": [
+                "One chair has been placed in the audience row."
+            ],
+            "expected_effects": [
+                "A second chair is added to the audience row, aligned with the first."
+            ],
+            "failure_handling": {
+                "reason": "The second chair is placed at a slight angle or incorrect distance from the first chair, creating a disorderly row.",
+                "recovery_strategy": "After placing the chair, I will perform a visual alignment check from the side. If it's misaligned, I'll re-grasp the chair and make fine adjustments to its position and rotation until it matches the first chair."
+            }
+        },
+        {
+            "step_id": 4,
+            "step_goal": "Move the third green chair to continue building the audience row.",
+            "rationale": "This step further expands the seating capacity for the presentation, making use of the available chairs in the room.",
+            "navigation_and_manipulation": "I will go to the third green chair, which is currently pulled away from the table. I will grasp it and move it to the audience area, placing it next to the second chair to continue the row.",
+            "preconditions": [
+                "Two chairs are correctly aligned in the audience row."
+            ],
+            "expected_effects": [
+                "Three chairs are now arranged in a neat row facing the television."
+            ],
+            "failure_handling": {
+                "reason": "The path to move the third chair is partially blocked by the table's support column.",
+                "recovery_strategy": "I will calculate a new path that involves pulling the chair further away from the table first before moving it sideways, ensuring a wider berth around the table support to avoid collision."
+            }
+        },
+        {
+            "step_id": 5,
+            "step_goal": "Move the final green chair to complete the audience seating.",
+            "rationale": "Positioning the last available chair completes the audience seating setup, maximizing the room's capacity for the presentation.",
+            "navigation_and_manipulation": "I will find the last green chair, which is tucked under the table. I will carefully pull it out, turn it, and move it to the end of the audience row, aligning it with the other three chairs.",
+            "preconditions": [
+                "Three chairs are arranged in the audience row."
+            ],
+            "expected_effects": [
+                "All four green chairs are now arranged in a single, organized row for the audience.",
+                "The table area is completely clear of chairs."
+            ],
+            "failure_handling": {
+                "reason": "The chair is tucked tightly under the table, making it difficult to pull out without scraping the table leg.",
+                "recovery_strategy": "I will first slide the chair sideways, parallel to the table edge, until it is clear of the table legs. Only then will I pull it straight back to remove it without contact."
+            }
+        },
+        {
+            "step_id": 6,
+            "step_goal": "Wipe the surface of the large table.",
+            "rationale": "With the chairs moved, the entire table surface is accessible. Cleaning the table provides a clear and professional space for the presenter's materials.",
+            "navigation_and_manipulation": "I will move to the large table. I will then execute a full 'surface wipe' command, moving my cleaning manipulator systematically across the entire tabletop to ensure it is clean and ready for the presentation.",
+            "preconditions": [
+                "All movable chairs have been repositioned away from the table."
+            ],
+            "expected_effects": [
+                "The large table is clean and prepared for the presenter.",
+                "The study area is fully configured for a presentation."
+            ],
+            "failure_handling": {
+                "reason": "A power cord on the floor obstructs the path to the far side of the table.",
+                "recovery_strategy": "I will not attempt to cross the cord. I will clean the accessible portion of the table, then navigate around the table to the other side to clean the remaining section, treating the cord as a static obstacle."
+            }
+        }
+    ],
+    "sample_frames_dir": "/e2e-data/evad-tech-vla/luzheng/ICML/generated_plans_output_high_videos/scene0005/sampled_frames"
+}

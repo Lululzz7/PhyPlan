@@ -1,0 +1,124 @@
+{
+    "scene_description": "The scene is a single, multi-functional room, likely a dorm or studio apartment, which serves as a living and entertainment area. The room is carpeted in dark green, with a bright orange shag rug defining the central seating space. Furniture includes a small grey tufted sofa, a large green ottoman acting as a coffee table, and two wooden-framed armchairs. An entertainment center is set up with a television on a low media console. Other notable items include a brick fireplace (which appears unused), a small kitchenette-like corner with a white shelving unit holding a coffee maker and kettle, a white wardrobe, a separate black cabinet with a microwave and printer, a pedestal fan, and a small, mobile laptop table. The overall arrangement feels cluttered and not optimized for social gathering or media consumption.",
+    "key_objects_for_planning": [
+        "grey sofa",
+        "green ottoman",
+        "wooden armchair",
+        "TV stand",
+        "television",
+        "white wardrobe",
+        "black cabinet",
+        "pedestal fan",
+        "small laptop table",
+        "fireplace"
+    ],
+    "high_level_goal": "Reorganize the living area furniture to create a more cohesive and functional entertainment and conversation space centered on the television.",
+    "steps": [
+        {
+            "step_id": 1,
+            "step_goal": "Move the pedestal fan to clear the main living space.",
+            "rationale": "The pedestal fan is a mobile obstruction located in the center of the intended new furniture arrangement. Relocating it first is essential to create a clear workspace for moving larger items.",
+            "navigation_and_manipulation": "I will navigate from my current position towards the area between the fireplace and the TV stand. I'll approach the pedestal fan, grasp its main vertical shaft, and carry it to the corner near the entrance and the white wardrobe. I will then place it securely on the floor.",
+            "preconditions": [
+                "The robot is inside the room.",
+                "The pedestal fan is in its initial position, obstructing the central area."
+            ],
+            "expected_effects": [
+                "The primary workspace for furniture rearrangement is now clear of the fan.",
+                "The pedestal fan is relocated to a less obstructive corner."
+            ],
+            "failure_handling": {
+                "reason": "The fan is dropped during transport due to an unstable grip or encountering an unseen obstacle on the floor.",
+                "recovery_strategy": "I will stop all movement and perform a 360-degree scan to re-locate the fan on the floor. I will then approach it, assess its new orientation for a stable grasp point, and re-attempt the lift and carry procedure."
+            }
+        },
+        {
+            "step_id": 2,
+            "step_goal": "Relocate the small laptop table from the fireplace corner.",
+            "rationale": "The laptop table is occupying the corner where one of the armchairs should be placed in the new layout. Moving it away frees up this critical space.",
+            "navigation_and_manipulation": "I will go to the corner next to the brick fireplace. I will grasp the small white laptop table. I'll carry it along the wall with the window and place it in the gap between the TV stand and the wall radiator, keeping it out of the main walkway.",
+            "preconditions": [
+                "The pedestal fan has been moved (Step 1 complete).",
+                "The laptop table is in the corner by the fireplace."
+            ],
+            "expected_effects": [
+                "The corner next to the fireplace is now empty and available for an armchair.",
+                "The laptop table is stored neatly against a wall."
+            ],
+            "failure_handling": {
+                "reason": "The table's base gets caught on the edge of the orange shag rug during movement.",
+                "recovery_strategy": "I will pause the transport action. I will lift the table vertically by a small amount to clear the rug's edge, then resume moving it horizontally to its destination."
+            }
+        },
+        {
+            "step_id": 3,
+            "step_goal": "Center the grey sofa in front of the television.",
+            "rationale": "The sofa is the largest piece of seating and the anchor of the entertainment area. Centering it provides the primary optimal viewing position and sets the axis for the rest of the arrangement.",
+            "navigation_and_manipulation": "I will position myself in front of the grey sofa. I will apply force to push and slide the sofa across the carpet until its midpoint is aligned with the midpoint of the TV stand.",
+            "preconditions": [
+                "The area in front of and to the side of the sofa is clear.",
+                "The robot has sufficient traction and power to move the sofa."
+            ],
+            "expected_effects": [
+                "The sofa is now positioned centrally for optimal TV viewing."
+            ],
+            "failure_handling": {
+                "reason": "The sofa snags on the carpet and resists sliding smoothly.",
+                "recovery_strategy": "I will cease pushing and reposition to apply force from a slightly different angle. If it still resists, I will switch to a lift-and-shift motion, slightly raising one end at a time to 'walk' it into position."
+            }
+        },
+        {
+            "step_id": 4,
+            "step_goal": "Position the green ottoman in front of the sofa.",
+            "rationale": "The ottoman functions as a coffee table for the seating area. Placing it correctly relative to the sofa is necessary for comfort and usability.",
+            "navigation_and_manipulation": "I will approach the green ottoman. I will push it until it is centered in front of the newly positioned sofa, ensuring there is a reasonable amount of space for legroom.",
+            "preconditions": [
+                "The grey sofa is centered (Step 3 complete)."
+            ],
+            "expected_effects": [
+                "The ottoman is correctly placed to function as a coffee table for the sofa."
+            ],
+            "failure_handling": {
+                "reason": "The game controllers currently on the ottoman fall off during the move.",
+                "recovery_strategy": "I will pause the ottoman-moving task. I will locate the fallen controllers on the rug, pick them up, and place them securely back in the center of the ottoman before resuming the repositioning."
+            }
+        },
+        {
+            "step_id": 5,
+            "step_goal": "Move the first wooden armchair into the new seating arrangement.",
+            "rationale": "To expand the seating area, the first of the two armchairs must be moved from its isolated position to join the main group, creating a more inclusive U-shaped layout.",
+            "navigation_and_manipulation": "I will go to the wooden armchair near the pink drawers and the wall. I will grasp the chair's frame, lift it, and carry it to the right side of the grey sofa. I will place it on the orange rug, angled slightly inward toward the television.",
+            "preconditions": [
+                "The sofa and ottoman are in their final positions (Steps 3 & 4 complete).",
+                "The destination spot on the rug is clear."
+            ],
+            "expected_effects": [
+                "The seating capacity of the entertainment area is increased.",
+                "The right side of the U-shaped arrangement is formed."
+            ],
+            "failure_handling": {
+                "reason": "Misjudging the path causes a collision with the corner of the ottoman.",
+                "recovery_strategy": "I will stop, set the chair down if necessary, recalculate a wider path around the ottoman, and then re-attempt the move to the destination."
+            }
+        },
+        {
+            "step_id": 6,
+            "step_goal": "Move the second wooden armchair to complete the layout.",
+            "rationale": "Placing the final armchair completes the symmetrical and functional entertainment area, fulfilling the high-level goal.",
+            "navigation_and_manipulation": "I will go to the corner by the fireplace where the second wooden armchair is located. I will grasp the chair, lift it, and carry it to the left side of the grey sofa. I will place it on the orange rug, mirroring the position of the other armchair to complete the symmetrical U-shape.",
+            "preconditions": [
+                "The fireplace corner has been cleared (Step 2 complete).",
+                "The first armchair is in position (Step 5 complete)."
+            ],
+            "expected_effects": [
+                "The furniture is arranged in a cohesive, functional entertainment group.",
+                "The high-level goal is successfully achieved."
+            ],
+            "failure_handling": {
+                "reason": "The chair's placement is not symmetrical with the first chair, disrupting the layout.",
+                "recovery_strategy": "I will perform a visual scan of both armchairs relative to the sofa. I will then make fine adjustments by nudging the second chair until its position and angle match the first, ensuring a balanced and neat final arrangement."
+            }
+        }
+    ],
+    "sample_frames_dir": "/e2e-data/evad-tech-vla/luzheng/ICML/generated_plans_output_high_videos/scene0002/sampled_frames"
+}

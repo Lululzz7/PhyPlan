@@ -1,0 +1,121 @@
+{
+    "scene_description": "The scene is a modern, brightly-lit open-plan office common area or breakout space, situated on an upper level overlooking a floor below. The area features blue and grey patterned carpeting. The space is furnished with highly mobile, modular furniture, all equipped with caster wheels. This includes a large rectangular table with a light wood top and metal frame, two black mesh-backed office chairs, a series of low-profile modular armless chairs (some with blue backs, some all black), and a separate nook with a high-backed grey lounge chair and a small round side table. The space is defined by a white safety railing on one side and a floor-to-ceiling glass wall on the other.",
+    "key_objects_for_planning": [
+        "rolling work table",
+        "black office chairs",
+        "blue and black modular chairs",
+        "grey lounge chair",
+        "small round side table",
+        "railing",
+        "glass wall"
+    ],
+    "high_level_goal": "Reconfigure the modular office space to create a formal presentation area centered around the main table.",
+    "steps": [
+        {
+            "step_id": 1,
+            "step_goal": "Reposition the main work table to serve as a central lectern.",
+            "rationale": "To create a focal point for the presentation, the main table must be moved from its position against the wall to a more central location. This defines the 'front' of the room.",
+            "navigation_and_manipulation": "I will approach the wooden work table. I'll disengage the caster locks if they are set, then push the table towards the center of the carpeted area, ensuring there is enough space around it to serve as a presentation stage.",
+            "preconditions": [
+                "The agent is inside the common area.",
+                "The work table is in its initial position near the glass wall."
+            ],
+            "expected_effects": [
+                "The work table is now centrally located in the open space.",
+                "A focal point for the presentation setup has been established."
+            ],
+            "failure_handling": {
+                "reason": "The table's caster wheels are locked and the table won't move.",
+                "recovery_strategy": "Systematically scan the base of each of the four legs to locate and operate the locking lever on each caster. Once all wheels are confirmed to be unlocked, attempt to push the table again."
+            }
+        },
+        {
+            "step_id": 2,
+            "step_goal": "Clear the designated audience area by relocating the lounge furniture.",
+            "rationale": "The lounge chair and side table are currently occupying the space needed for audience seating. They must be moved to create an unobstructed viewing area.",
+            "navigation_and_manipulation": "I will navigate to the corner where the grey lounge chair and small side table are located. First, I'll push the grey lounge chair along the wall to the far end of the space, out of the primary activity zone. Then, I will return for the small round side table and push it to a position next to the relocated lounge chair.",
+            "preconditions": [
+                "The main table has been repositioned (Step 1 complete).",
+                "The lounge chair and side table are in their initial corner position."
+            ],
+            "expected_effects": [
+                "The area intended for audience seating is now empty and ready for chair arrangement.",
+                "The lounge furniture is neatly stored out of the way."
+            ],
+            "failure_handling": {
+                "reason": "The lounge chair is heavier than anticipated and its path is blocked by other furniture.",
+                "recovery_strategy": "Pause the push action. Re-scan the area to plot a clear, alternative path. If necessary, perform a small, temporary move of an obstructing object before resuming the relocation of the lounge chair."
+            }
+        },
+        {
+            "step_id": 3,
+            "step_goal": "Arrange the first row of audience seating using two modular chairs.",
+            "rationale": "This step begins the construction of the audience seating block, establishing the front row and setting the distance and alignment for subsequent rows.",
+            "navigation_and_manipulation": "I will go to the line of blue and black modular chairs. I will take the first chair and push it into the cleared space, positioning it to face the central table at an appropriate viewing distance. I will then retrieve a second modular chair and place it neatly beside the first, forming a two-chair front row.",
+            "preconditions": [
+                "The audience area is clear (Step 2 complete).",
+                "The modular chairs are lined up along the glass wall."
+            ],
+            "expected_effects": [
+                "A front row of two audience chairs is now arranged facing the presentation table."
+            ],
+            "failure_handling": {
+                "reason": "The chairs do not align properly or are at an incorrect distance from the table.",
+                "recovery_strategy": "After placing both chairs, I will perform a final adjustment pass, nudging each chair slightly to ensure they are parallel to the table and aligned with each other."
+            }
+        },
+        {
+            "step_id": 4,
+            "step_goal": "Arrange the second row of audience seating.",
+            "rationale": "To increase the seating capacity of the presentation area, a second row is required. This builds upon the first row to create a larger audience block.",
+            "navigation_and_manipulation": "I will return to the line of modular chairs. I will push a third chair and position it directly behind the first chair of the front row. I will repeat this process with a fourth chair, placing it behind the second chair of the front row to complete the four-person audience section.",
+            "preconditions": [
+                "The front row of seating is in place (Step 3 complete).",
+                "At least two modular chairs remain in their original location."
+            ],
+            "expected_effects": [
+                "A second row of two audience chairs is arranged, completing a 2x2 seating block."
+            ],
+            "failure_handling": {
+                "reason": "The spacing between the front and back rows is insufficient, blocking the walkway.",
+                "recovery_strategy": "I will push the entire back row backwards as a single unit to create more legroom and a clearer aisle. I will then verify the alignment of all four chairs."
+            }
+        },
+        {
+            "step_id": 5,
+            "step_goal": "Position the black office chairs for the presenters.",
+            "rationale": "The two black office chairs are distinct from the audience seats and are better suited for speakers at the presentation table. They need to be moved into position.",
+            "navigation_and_manipulation": "I will navigate to where the two black office chairs were originally located. I will push each chair, one at a time, to the presentation table and tuck them in on either side, facing the audience area.",
+            "preconditions": [
+                "The main table is in its central position (Step 1 complete).",
+                "The office chairs are in their initial positions."
+            ],
+            "expected_effects": [
+                "The two black office chairs are now positioned at the presentation table, ready for speakers."
+            ],
+            "failure_handling": {
+                "reason": "A chair rolls away uncontrollably after being pushed.",
+                "recovery_strategy": "I will cease pushing and track the chair's movement. Once it has stopped, I will approach it again and re-attempt the positioning maneuver with a slower, more controlled push."
+            }
+        },
+        {
+            "step_id": 6,
+            "step_goal": "Consolidate any remaining unused furniture.",
+            "rationale": "To finalize the setup and ensure the space is tidy and free of obstructions, any leftover furniture must be organized and stored neatly.",
+            "navigation_and_manipulation": "I will scan the area for any remaining modular chairs that were not used for the audience. I will go to each one and push it flush against the glass wall, grouping it with other unused items to keep the main pathways clear.",
+            "preconditions": [
+                "Audience and presenter seating is fully arranged (Steps 3, 4, 5 complete)."
+            ],
+            "expected_effects": [
+                "The entire presentation area is fully configured and tidy.",
+                "All unused furniture is consolidated and stored out of the way.",
+                "The high-level goal is achieved."
+            ],
+            "failure_handling": {
+                "reason": "The consolidated furniture looks messy or still obstructs a minor pathway.",
+                "recovery_strategy": "I will perform a final tidying action, nudging the stored chairs into a single, compact line against the wall to maximize open space and improve the area's overall appearance."
+            }
+        }
+    ],
+    "sample_frames_dir": "/e2e-data/evad-tech-vla/luzheng/ICML/generated_plans_output_high_videos/scene0004/sampled_frames"
+}

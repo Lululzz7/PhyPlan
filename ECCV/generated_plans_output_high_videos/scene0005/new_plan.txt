@@ -1,0 +1,134 @@
+================================================================================
+Task Plan: Reconfigure the study area to prepare for a group presentation using the wall-mounted television.
+================================================================================
+
+
+--- Step 1: Relocate the book cart to clear the presentation viewing area. ---
+
+  [Rationale]
+  The book cart is currently obstructing the space where audience chairs will be placed. Moving it first creates a clear and safe area to reconfigure the furniture for presentation viewing.
+
+  [Navigation & Manipulation]
+  I will start by moving towards the corner with the doorway to approach the library book cart. I'll grasp the cart's frame and carefully push it along the wall, positioning it neatly in the corner next to the door to maximize open space.
+
+  [Preconditions]
+  - Agent is located within the study area.
+  - The book cart is in its initial position near the doorway.
+
+
+  [Expected Effects]
+  - The book cart is moved to a non-obstructive corner position.
+  - The central floor space is now clear for chair rearrangement.
+
+
+  [Failure Handling]
+  - Reason: One of the cart's wheels gets stuck on the carpet seam, causing the cart to tilt and books to become unstable.
+  - Recovery: I will stop pushing immediately to stabilize the cart. Then, I will slightly pull the cart back and re-align my push to navigate over the seam at a better angle, proceeding with reduced speed.
+
+
+--- Step 2: Move the first green chair to begin forming an audience row. ---
+
+  [Rationale]
+  To create an audience viewing area, the chairs must be moved from their positions at the table and reoriented to face the television screen.
+
+  [Navigation & Manipulation]
+  I will navigate to the green chair positioned at the end of the table near the small cabinet. I will grasp the chair, pull it away from the table, turn it approximately 90 degrees to face the television, and place it down to establish the first seat in the audience row.
+
+  [Preconditions]
+  - The main floor area has been cleared of the book cart (Step 1 complete).
+
+
+  [Expected Effects]
+  - One chair is successfully repositioned to face the television, starting the audience row.
+
+
+  [Failure Handling]
+  - Reason: The chair is heavier than expected, causing difficulty in lifting or turning it smoothly.
+  - Recovery: I will use a push/slide technique instead of lifting. I will lower my grasp point and apply steady force to slide the chair across the carpet into the desired position and orientation.
+
+
+--- Step 3: Move the second green chair into position next to the first. ---
+
+  [Rationale]
+  Building the audience row requires systematically moving each chair and aligning it with the previous ones to create an organized seating arrangement.
+
+  [Navigation & Manipulation]
+  I will approach the next green chair at the table. I'll grasp it, move it back, and place it directly beside the first audience chair. I must ensure it is aligned in the same direction, facing the television.
+
+  [Preconditions]
+  - One chair has been placed in the audience row.
+
+
+  [Expected Effects]
+  - A second chair is added to the audience row, aligned with the first.
+
+
+  [Failure Handling]
+  - Reason: The second chair is placed at a slight angle or incorrect distance from the first chair, creating a disorderly row.
+  - Recovery: After placing the chair, I will perform a visual alignment check from the side. If it's misaligned, I'll re-grasp the chair and make fine adjustments to its position and rotation until it matches the first chair.
+
+
+--- Step 4: Move the third green chair to continue building the audience row. ---
+
+  [Rationale]
+  This step further expands the seating capacity for the presentation, making use of the available chairs in the room.
+
+  [Navigation & Manipulation]
+  I will go to the third green chair, which is currently pulled away from the table. I will grasp it and move it to the audience area, placing it next to the second chair to continue the row.
+
+  [Preconditions]
+  - Two chairs are correctly aligned in the audience row.
+
+
+  [Expected Effects]
+  - Three chairs are now arranged in a neat row facing the television.
+
+
+  [Failure Handling]
+  - Reason: The path to move the third chair is partially blocked by the table's support column.
+  - Recovery: I will calculate a new path that involves pulling the chair further away from the table first before moving it sideways, ensuring a wider berth around the table support to avoid collision.
+
+
+--- Step 5: Move the final green chair to complete the audience seating. ---
+
+  [Rationale]
+  Positioning the last available chair completes the audience seating setup, maximizing the room's capacity for the presentation.
+
+  [Navigation & Manipulation]
+  I will find the last green chair, which is tucked under the table. I will carefully pull it out, turn it, and move it to the end of the audience row, aligning it with the other three chairs.
+
+  [Preconditions]
+  - Three chairs are arranged in the audience row.
+
+
+  [Expected Effects]
+  - All four green chairs are now arranged in a single, organized row for the audience.
+  - The table area is completely clear of chairs.
+
+
+  [Failure Handling]
+  - Reason: The chair is tucked tightly under the table, making it difficult to pull out without scraping the table leg.
+  - Recovery: I will first slide the chair sideways, parallel to the table edge, until it is clear of the table legs. Only then will I pull it straight back to remove it without contact.
+
+
+--- Step 6: Wipe the surface of the large table. ---
+
+  [Rationale]
+  With the chairs moved, the entire table surface is accessible. Cleaning the table provides a clear and professional space for the presenter's materials.
+
+  [Navigation & Manipulation]
+  I will move to the large table. I will then execute a full 'surface wipe' command, moving my cleaning manipulator systematically across the entire tabletop to ensure it is clean and ready for the presentation.
+
+  [Preconditions]
+  - All movable chairs have been repositioned away from the table.
+
+
+  [Expected Effects]
+  - The large table is clean and prepared for the presenter.
+  - The study area is fully configured for a presentation.
+
+
+  [Failure Handling]
+  - Reason: A power cord on the floor obstructs the path to the far side of the table.
+  - Recovery: I will not attempt to cross the cord. I will clean the accessible portion of the table, then navigate around the table to the other side to clean the remaining section, treating the cord as a static obstacle.
+

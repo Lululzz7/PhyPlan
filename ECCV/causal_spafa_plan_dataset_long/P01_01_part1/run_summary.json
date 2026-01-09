@@ -1,0 +1,38 @@
+{
+    "source_video": "P01_01_part1.MP4",
+    "processing_timestamp_utc": "2025-11-28T02:55:44.576631Z",
+    "models_used": {
+        "planning": "gemini-2.5-pro",
+        "selection": "gemini-2.5-pro"
+    },
+    "config_planning": {
+        "API_KEY": "sk-44oHu4ZaRdEoSMiFPL61x5LvGSSNZ6qD7RSXMuoscwfKwW3s",
+        "API_BASE_URL": "http://model.mify.ai.srv/v1",
+        "MODEL_PROVIDER_ID": "vertex_ai",
+        "MODEL_NAME": "gemini-2.5-pro",
+        "VIDEO_PATH": "/e2e-data/embodied-research-data/luzheng/kitchen/long/P01_01_part1.MP4",
+        "OUTPUT_BASE_FOLDER": "causal_spafa_plan_dataset_long_kitchen",
+        "MAX_FRAMES_TO_SAMPLE": 50,
+        "RESIZE_DIMENSION": null,
+        "JPEG_QUALITY": 100,
+        "VERBOSE_LOGGING": true,
+        "EMBED_INDEX_ON_API_IMAGES": true
+    },
+    "config_selection": {
+        "API_KEY": "sk-44oHu4ZaRdEoSMiFPL61x5LvGSSNZ6qD7RSXMuoscwfKwW3s",
+        "API_BASE_URL": "http://model.mify.ai.srv/v1",
+        "MODEL_PROVIDER_ID": "vertex_ai",
+        "MODEL_NAME": "gemini-2.5-pro",
+        "VIDEO_PATH": "/e2e-data/embodied-research-data/luzheng/kitchen/long/P01_01_part1.MP4",
+        "OUTPUT_BASE_FOLDER": "causal_spafa_plan_dataset_long_kitchen",
+        "MAX_FRAMES_TO_SAMPLE": 50,
+        "RESIZE_DIMENSION": null,
+        "JPEG_QUALITY": 100,
+        "VERBOSE_LOGGING": true,
+        "EMBED_INDEX_ON_API_IMAGES": true
+    },
+    "stages": [
+        "plan_only",
+        "frame_selection"
+    ]
+}

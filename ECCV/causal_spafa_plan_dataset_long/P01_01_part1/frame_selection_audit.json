@@ -1,0 +1,191 @@
+{
+    "steps": [
+        {
+            "step_id": 1,
+            "critical_frames": [
+                {
+                    "frame_index": 2,
+                    "confidence": 0.95,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "hand is in close proximity to light switch"
+                    ],
+                    "unmatched_relations": []
+                },
+                {
+                    "frame_index": 8,
+                    "confidence": 0.95,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "hand is inside refrigerator vegetable drawer",
+                        "cucumber and carrot are inside refrigerator vegetable drawer"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 2,
+            "critical_frames": [
+                {
+                    "frame_index": 12,
+                    "confidence": 0.95,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "hands are above counter",
+                        "vegetables are held by hands"
+                    ],
+                    "unmatched_relations": []
+                },
+                {
+                    "frame_index": 16,
+                    "confidence": 0.95,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "drawer is open",
+                        "knife is in drawer",
+                        "hand is in drawer"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 3,
+            "critical_frames": [
+                {
+                    "frame_index": 20,
+                    "confidence": 0.95,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "cucumber is under water stream",
+                        "hands are in contact with cucumber",
+                        "cucumber is positioned over sink basin"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 4,
+            "critical_frames": [
+                {
+                    "frame_index": 28,
+                    "confidence": 0.95,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "hands are inside cupboard",
+                        "pan is inside cupboard",
+                        "hands are in contact with pan handle"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 5,
+            "critical_frames": [
+                {
+                    "frame_index": 39,
+                    "confidence": 0.95,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "knife blade is in contact with and perpendicular to the zucchini",
+                        "zucchini is on cutting board",
+                        "left hand is stabilizing zucchini"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 6,
+            "critical_frames": [
+                {
+                    "frame_index": 44,
+                    "confidence": 0.95,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "zucchini slices are stacked",
+                        "knife is cutting through stacked slices"
+                    ],
+                    "unmatched_relations": []
+                },
+                {
+                    "frame_index": 46,
+                    "confidence": 0.95,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "knife is moving in a rapid up-and-down motion",
+                        "knife tip is in contact with cutting board",
+                        "zucchini strips are under the knife blade"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,754 @@
+{
+    "high_level_goal": "Prepare a meal by sautéing vegetables, preparing hot water for another dish component, and setting the table for dining.",
+    "steps": [
+        {
+            "step_id": 1,
+            "step_goal": "Begin sautéing chopped celery in a pan on the stovetop.",
+            "rationale": "This initial cooking step forms the aromatic base of the dish. The video jumps from raw ingredients to this point, so this step marks the start of the active cooking process by applying heat to the first prepared vegetable.",
+            "preconditions": [
+                "Celery has been unpacked, washed, and chopped.",
+                "A pan has been placed on a stove burner.",
+                "Cooking oil has likely been added to the pan."
+            ],
+            "expected_effects": [
+                "Celery will begin to soften and release its aroma through heating.",
+                "The kitchen is now actively being used for cooking."
+            ],
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "chopped celery is inside pan",
+                    "objects": [
+                        "chopped_celery",
+                        "pan"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "celery",
+                    "affordance_types": [
+                        "cooking",
+                        "softening"
+                    ],
+                    "reasons": "The celery is now being subjected to heat, which changes its physical state."
+                }
+            ],
+            "predicted_next_actions": [
+                "Stir the celery to cook it evenly",
+                "Prepare and add other vegetables or ingredients"
+            ],
+            "critical_frames": [
+                {
+                    "frame_index": 3,
+                    "action_description": "The camera perspective moves to show a black pan resting on an electric stovetop burner, filled with freshly chopped green celery.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "pan is on top of stovetop burner",
+                            "objects": [
+                                "pan",
+                                "stovetop_burner"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "chopped celery is contained within pan",
+                            "objects": [
+                                "chopped_celery",
+                                "pan"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "pan",
+                            "affordance_types": [
+                                "heatable",
+                                "container"
+                            ],
+                            "reasons": "The pan is made of a heat-conductive material and is on a heat source. Its shape contains the celery."
+                        },
+                        {
+                            "object_name": "stove",
+                            "affordance_types": [
+                                "heat_source_active"
+                            ],
+                            "reasons": "The celery will soon be stirred as it cooks, implying the stove is on and providing heat."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "stovetop_burner",
+                        "action": "is applying thermal energy to",
+                        "patient": "pan",
+                        "causal_effect_on_patient": "is undergoing a rapid increase in temperature via conduction",
+                        "causal_effect_on_environment": "Heat is being transferred from the pan to the celery, beginning the process of cooking (cellular breakdown and water evaporation).",
+                        "causal_spatial_precondition": "The flat bottom of the pan is in direct physical contact with the surface of the stove burner, enabling efficient heat transfer.",
+                        "causal_affordance_focus_detail": "The pan's 'heat-conductive_base' is designed to maximize surface area contact with the heating element, ensuring rapid and uniform distribution of thermal energy."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The flat, metallic bottom surface of the pan.",
+                        "affordance_type": "heat-conductive_base",
+                        "causal_role": "interface for thermal energy transfer"
+                    },
+                    "state_change_description": "The celery has been transferred from a preparatory state (e.g., on a cutting board) into the cooking vessel, initiating the sautéing process.",
+                    "keyframe_image_path": "/e2e-data/evad-tech-vla/luzheng/ICML/causal_spafa_plan_dataset_long_kitchen/P01_01_part3/01_begin_sautéing_chopped_celery_in_a_pan_on_the_stovetop/frame_003_ts_7.19s.jpg"
+                }
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "pan",
+                    "stove"
+                ],
+                "materials": [
+                    "chopped celery",
+                    "cooking oil (inferred)"
+                ]
+            },
+            "causal_challenge_question": "What if the pan was placed on the stove without any oil before adding the celery?",
+            "expected_challenge_outcome": "Without the oil as a medium for heat transfer and a lubricant, the celery would stick to the hot pan surface, burn quickly in spots of direct contact, and cook unevenly.",
+            "failure_handling": {
+                "reason": "The stovetop burner is set too high, causing the celery to burn instead of sauté.",
+                "recovery_strategy": "Immediately reduce the burner's heat setting, stir the celery vigorously to redistribute heat, and if necessary, add a small amount of liquid like water or stock to deglaze the pan and prevent further burning."
+            }
+        },
+        {
+            "step_id": 2,
+            "step_goal": "Sauté the celery by stirring it in the hot pan.",
+            "rationale": "This action is crucial for even cooking. Stirring redistributes the celery pieces, ensuring all of them make contact with the hot surface of the pan and preventing any single piece from burning.",
+            "preconditions": [
+                "Chopped celery is in a hot pan on the stove.",
+                "A spatula is in hand."
+            ],
+            "expected_effects": [
+                "Celery becomes more evenly cooked, tender, and slightly browned.",
+                "Moisture released from the celery turns to steam."
+            ],
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "chopped celery is redistributed within pan",
+                    "objects": [
+                        "chopped_celery",
+                        "pan"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "celery",
+                    "affordance_types": [
+                        "partially_cooked",
+                        "softened"
+                    ],
+                    "reasons": "The continued application of heat and agitation has further altered the celery's texture."
+                }
+            ],
+            "predicted_next_actions": [
+                "Pause stirring to prepare another ingredient",
+                "Add a new ingredient to the pan"
+            ],
+            "critical_frames": [
+                {
+                    "frame_index": 4,
+                    "action_description": "The person holds the pan handle with their left hand for stability while using a black spatula in their right hand to push and turn the chopped celery within the hot pan.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "spatula head is in contact with and moving the chopped celery",
+                            "objects": [
+                                "spatula",
+                                "chopped_celery"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "left hand is gripping pan handle",
+                            "objects": [
+                                "left_hand",
+                                "pan_handle"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "spatula",
+                            "affordance_types": [
+                                "pushing_surface",
+                                "stirring_tool"
+                            ],
+                            "reasons": "The spatula has a broad, flat head suitable for moving solid food items around in a pan."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "spatula_head",
+                        "action": "is applying kinetic force to",
+                        "patient": "chopped_celery",
+                        "causal_effect_on_patient": "is being displaced and reoriented within the pan",
+                        "causal_effect_on_environment": "The celery pieces are being mixed, ensuring pieces from cooler areas are moved to hotter areas of the pan for even cooking.",
+                        "causal_spatial_precondition": "The head of the spatula is inserted among the mass of celery pieces, allowing it to efficiently exert force on a large number of them.",
+                        "causal_affordance_focus_detail": "The broad, slightly curved surface of the spatula head allows it to scoop under and lift the celery pieces, utilizing its 'pushing_surface' affordance for effective agitation."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The flat, broad head of the black spatula.",
+                        "affordance_type": "pushing_surface",
+                        "causal_role": "distributor of force for agitation"
+                    },
+                    "state_change_description": "The static pile of celery is being agitated, causing pieces from the bottom to move to the top and ensuring more uniform exposure to heat.",
+                    "keyframe_image_path": "/e2e-data/evad-tech-vla/luzheng/ICML/causal_spafa_plan_dataset_long_kitchen/P01_01_part3/02_sauté_the_celery_by_stirring_it_in_the_hot_pan/frame_004_ts_10.79s.jpg"
+                }
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "pan",
+                    "spatula",
+                    "stove"
+                ],
+                "materials": [
+                    "chopped celery"
+                ]
+            },
+            "causal_challenge_question": "What if a fork was used instead of a spatula to stir?",
+            "expected_challenge_outcome": "A fork would be less effective. Its tines would move only a small amount of celery at a time and would be more likely to scrape the pan's non-stick surface. The wide head of the spatula is better for turning over larger quantities at once.",
+            "failure_handling": {
+                "reason": "The celery pieces begin sticking to the bottom of the pan.",
+                "recovery_strategy": "Use the edge of the spatula to scrape the bottom of the pan firmly but gently to dislodge the stuck pieces. If sticking persists, lower the heat and add a small amount of oil or water."
+            }
+        },
+        {
+            "step_id": 3,
+            "step_goal": "Prepare a red onion for chopping by transferring it from a container to the cutting board.",
+            "rationale": "This step transitions to preparing the next ingredient. Moving the onion to the designated preparation surface (the cutting board) is a necessary precursor to chopping it.",
+            "preconditions": [
+                "A container holding a pre-cut red onion is available.",
+                "A cutting board is available and clear."
+            ],
+            "expected_effects": [
+                "A piece of red onion is positioned on the cutting board, ready for chopping."
+            ],
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "red onion is on cutting board",
+                    "objects": [
+                        "red_onion",
+                        "cutting_board"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "red_onion",
+                    "affordance_types": [
+                        "positioned_for_chopping"
+                    ],
+                    "reasons": "The onion is now on a stable surface suitable for cutting."
+                }
+            ],
+            "predicted_next_actions": [
+                "Chop the red onion with a knife"
+            ],
+            "critical_frames": [
+                {
+                    "frame_index": 8,
+                    "action_description": "The person picks a large piece of red onion out of a small white bowl with their right hand and places it onto the surface of a green cutting board.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "right hand is holding red onion piece",
+                            "objects": [
+                                "right_hand",
+                                "red_onion"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "red onion piece is positioned above cutting board",
+                            "objects": [
+                                "red_onion",
+                                "cutting_board"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "red_onion",
+                            "affordance_types": [
+                                "graspable"
+                            ],
+                            "reasons": "The onion piece is large and solid enough to be securely held by hand."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "hand",
+                        "action": "is transporting and positioning",
+                        "patient": "red_onion",
+                        "causal_effect_on_patient": "is being moved from one location (bowl) to another (cutting board) before being released",
+                        "causal_effect_on_environment": "The onion is now staged on a stable, cut-safe surface, preparing the workspace for the chopping action.",
+                        "causal_spatial_precondition": "The hand has securely gripped the onion, and there is a clear path between the bowl and the cutting board.",
+                        "causal_affordance_focus_detail": "The fingers and palm conform to the irregular shape of the onion piece, utilizing its 'graspable' affordance to lift and move it against gravity."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The solid, multi-layered body of the onion piece.",
+                        "affordance_type": "graspable",
+                        "causal_role": "object for manipulation and transport"
+                    },
+                    "state_change_description": "The red onion has been relocated from its storage container to the work surface, making it ready for the next preparation step.",
+                    "keyframe_image_path": "/e2e-data/evad-tech-vla/luzheng/ICML/causal_spafa_plan_dataset_long_kitchen/P01_01_part3/03_prepare_a_red_onion_for_chopping_by_transferring_it_from_a_container_to_the_cutting_board/frame_008_ts_25.19s.jpg"
+                }
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "cutting board",
+                    "small bowl"
+                ],
+                "materials": [
+                    "red onion"
+                ]
+            },
+            "causal_challenge_question": "What if the cutting board was wet?",
+            "expected_challenge_outcome": "A wet cutting board would make the onion piece slide around, making it difficult to hold steady. This would increase the risk of an inaccurate cut or injury as more force would be needed to stabilize the onion.",
+            "failure_handling": {
+                "reason": "A piece of onion is dropped on the counter or floor during transfer.",
+                "recovery_strategy": "Pick up the dropped piece. If it fell on a clean counter, it can be used. If it fell on the floor, it should be discarded or washed thoroughly before use."
+            }
+        },
+        {
+            "step_id": 4,
+            "step_goal": "Finely chop the red onion on the cutting board.",
+            "rationale": "Chopping the onion increases its surface area, allowing it to cook faster and more evenly, and to distribute its flavor throughout the dish. This is a fundamental preparation technique.",
+            "preconditions": [
+                "Red onion is on the cutting board.",
+                "A sharp knife is available."
+            ],
+            "expected_effects": [
+                "The red onion is transformed into a pile of small, diced pieces.",
+                "Volatile sulfur compounds are released from the onion, creating a distinct smell."
+            ],
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "diced onion is in a pile on cutting board",
+                    "objects": [
+                        "diced_onion",
+                        "cutting_board"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "red_onion",
+                    "affordance_types": [
+                        "chopped",
+                        "ready_to_cook"
+                    ],
+                    "reasons": "The onion has been processed into a new state suitable for adding to the pan."
+                }
+            ],
+            "predicted_next_actions": [
+                "Add the chopped onion to the pan with the celery",
+                "Scrape the chopped onion into a bowl"
+            ],
+            "critical_frames": [
+                {
+                    "frame_index": 11,
+                    "action_description": "The person holds the onion piece steady on the cutting board with their left fingertips while making a deliberate vertical slice through it with a white-handled knife held in their right hand.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "knife blade is in contact with and perpendicular to the red onion",
+                            "objects": [
+                                "knife_blade",
+                                "red_onion"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "left hand is stabilizing the red onion against the cutting board",
+                            "objects": [
+                                "left_hand",
+                                "red_onion",
+                                "cutting_board"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "knife",
+                            "affordance_types": [
+                                "cutting_active",
+                                "sharp"
+                            ],
+                            "reasons": "The knife is visibly cleaving the onion with controlled force, which implies it is sharp enough for the task."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "knife_blade_edge",
+                        "action": "is concentrating downward and forward force to",
+                        "patient": "red_onion",
+                        "causal_effect_on_patient": "is undergoing shear stress exceeding its material strength, resulting in fracture and separation of its layers.",
+                        "causal_effect_on_environment": "A visible cut is forming in the onion, and volatile compounds are being released into the air.",
+                        "causal_spatial_precondition": "The knife's sharp edge is pressed against the onion's surface, creating immense pressure in a tiny area that allows it to initiate a cut.",
+                        "causal_affordance_focus_detail": "The thin, hardened geometry of the knife edge concentrates the force applied by the hand, allowing it to easily exceed the onion's shear strength and sever its fibers."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The sharp cutting edge of the knife blade.",
+                        "affordance_type": "cutting_edge",
+                        "causal_role": "point of force concentration"
+                    },
+                    "state_change_description": "A new plane of separation is being created as the knife blade severs the onion's cellular structure, beginning the process of dicing.",
+                    "keyframe_image_path": "/e2e-data/evad-tech-vla/luzheng/ICML/causal_spafa_plan_dataset_long_kitchen/P01_01_part3/04_finely_chop_the_red_onion_on_the_cutting_board/frame_011_ts_35.99s.jpg"
+                }
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "knife",
+                    "cutting board"
+                ],
+                "materials": [
+                    "red onion"
+                ]
+            },
+            "causal_challenge_question": "What if the knife was dull?",
+            "expected_challenge_outcome": "A dull knife would crush the onion's cells instead of cleanly slicing them, releasing more water and making the pieces mushy. It would require more downward force, making the process less efficient and increasing the risk of the knife slipping and causing injury.",
+            "failure_handling": {
+                "reason": "The knife slips while cutting the onion.",
+                "recovery_strategy": "Immediately stop cutting. Re-evaluate hand position, ensuring the stabilizing hand uses a 'claw grip' with fingertips tucked away. Check that the cutting board is not slipping. Proceed with slower, more controlled cuts."
+            }
+        },
+        {
+            "step_id": 5,
+            "step_goal": "Fill an electric kettle with tap water and set it to boil.",
+            "rationale": "This is a parallel task to prepare another component of the meal, such as a stock, couscous, or a beverage, which requires boiling water. Performing this while other ingredients cook is efficient time management.",
+            "preconditions": [
+                "An electric kettle is available.",
+                "Access to a sink with a faucet is possible."
+            ],
+            "expected_effects": [
+                "The kettle contains water and is actively heating it towards boiling point.",
+                "Boiling water will be available for use in a few minutes."
+            ],
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "kettle is on its power base",
+                    "objects": [
+                        "kettle",
+                        "kettle_base"
+                    ],
+                    "truth": true
+                },
+                {
+                    "relation": "water is inside kettle",
+                    "objects": [
+                        "water",
+                        "kettle"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "kettle",
+                    "affordance_types": [
+                        "heating_active"
+                    ],
+                    "reasons": "The kettle has been filled and placed on its base, and a button press (implied) has started the heating cycle."
+                }
+            ],
+            "predicted_next_actions": [
+                "Return to the stove to check on the cooking vegetables",
+                "Prepare a bowl or container for the boiling water"
+            ],
+            "critical_frames": [
+                {
+                    "frame_index": 21,
+                    "action_description": "The person holds a black electric kettle under a running faucet in a metal sink, positioning the stream of water to flow directly into the kettle's opening.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "kettle opening is positioned directly under the faucet nozzle",
+                            "objects": [
+                                "kettle_opening",
+                                "faucet_nozzle"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "a stream of water is flowing from the faucet into the kettle",
+                            "objects": [
+                                "water_stream",
+                                "faucet_nozzle",
+                                "kettle_opening"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "kettle",
+                            "affordance_types": [
+                                "receptacle"
+                            ],
+                            "reasons": "The kettle is designed with an opening and an internal cavity to hold liquid."
+                        },
+                        {
+                            "object_name": "faucet",
+                            "affordance_types": [
+                                "water_dispenser_active"
+                            ],
+                            "reasons": "The faucet's valve is open, and water is flowing out."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "gravity",
+                        "action": "is causing water to flow from the faucet into",
+                        "patient": "kettle_reservoir",
+                        "causal_effect_on_patient": "is accumulating a volume of water",
+                        "causal_effect_on_environment": "The weight of the kettle is increasing, and the sound of filling water is audible.",
+                        "causal_spatial_precondition": "The kettle's inlet is positioned vertically below the faucet's outlet, creating an unobstructed path for the water to follow under gravitational force.",
+                        "causal_affordance_focus_detail": "The wide opening at the top of the kettle serves as a 'receptacle', allowing it to efficiently capture the flow of water from the faucet."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The open aperture at the top or spout of the kettle.",
+                        "affordance_type": "receptacle",
+                        "causal_role": "inlet for liquid"
+                    },
+                    "state_change_description": "The kettle, previously empty or partially full, is being filled with water, increasing its mass and internal water level.",
+                    "keyframe_image_path": "/e2e-data/evad-tech-vla/luzheng/ICML/causal_spafa_plan_dataset_long_kitchen/P01_01_part3/05_fill_an_electric_kettle_with_tap_water_and_set_it_to_boil/frame_021_ts_71.99s.jpg"
+                }
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "electric_kettle",
+                    "sink",
+                    "faucet"
+                ],
+                "materials": [
+                    "water"
+                ]
+            },
+            "causal_challenge_question": "What if the kettle was overfilled past the 'MAX' line?",
+            "expected_challenge_outcome": "As the water heats and expands, and then boils violently, it would spill out of the top and spout. This creates a serious scalding hazard and could damage the electrical components in the kettle's base.",
+            "failure_handling": {
+                "reason": "The person forgets to turn the kettle on after filling and placing it on the base.",
+                "recovery_strategy": "Notice that no heating sound or light is present. Return to the kettle and press the 'on' switch to start the heating cycle."
+            }
+        },
+        {
+            "step_id": 6,
+            "step_goal": "Set the dining table for one person.",
+            "rationale": "Preparing the dining area is a key part of the overall goal of having a meal. This action transitions from cooking and prep to creating the environment for consumption.",
+            "preconditions": [
+                "A dining table is available and clear.",
+                "A placemat and plate have been retrieved."
+            ],
+            "expected_effects": [
+                "A place setting for one person, consisting of a placemat and a plate, is established on the table."
+            ],
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "plate is on top of placemat",
+                    "objects": [
+                        "plate",
+                        "placemat"
+                    ],
+                    "truth": true
+                },
+                {
+                    "relation": "placemat is on top of table",
+                    "objects": [
+                        "placemat",
+                        "table"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "table",
+                    "affordance_types": [
+                        "prepared_for_dining"
+                    ],
+                    "reasons": "The table now has a designated spot for a meal."
+                }
+            ],
+            "predicted_next_actions": [
+                "Retrieve cutlery and a napkin for the place setting",
+                "Retrieve a glass for a beverage"
+            ],
+            "critical_frames": [
+                {
+                    "frame_index": 44,
+                    "action_description": "The person uses both hands to carefully lower a patterned plate onto a striped placemat that has already been placed on a round wooden dining table.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "plate is held by both hands above the placemat",
+                            "objects": [
+                                "plate",
+                                "hands",
+                                "placemat"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "placemat is flat on the table surface",
+                            "objects": [
+                                "placemat",
+                                "table"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "placemat",
+                            "affordance_types": [
+                                "supportive_surface"
+                            ],
+                            "reasons": "The placemat is flat and stable, capable of supporting the plate."
+                        },
+                        {
+                            "object_name": "plate",
+                            "affordance_types": [
+                                "stable_base"
+                            ],
+                            "reasons": "The plate has a flat bottom rim that allows it to rest without wobbling."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "hands",
+                        "action": "are lowering and releasing",
+                        "patient": "plate",
+                        "causal_effect_on_patient": "is coming to rest under the force of gravity onto the placemat surface",
+                        "causal_effect_on_environment": "The place setting is now established, defining a clean, dedicated area for a meal.",
+                        "causal_spatial_precondition": "The plate is held parallel to the table surface and aligned with the center of the placemat, ensuring a stable and centered landing.",
+                        "causal_affordance_focus_detail": "The flat bottom of the plate (its 'stable_base') makes contact with the flat top of the placemat (a 'supportive_surface'), resulting in a stable configuration due to a wide, distributed base of support."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The flat bottom rim of the plate.",
+                        "affordance_type": "stable_base",
+                        "causal_role": "interface for stable placement"
+                    },
+                    "state_change_description": "The plate transitions from being held in the air to resting securely on the placemat, completing the main part of the place setting.",
+                    "keyframe_image_path": "/e2e-data/evad-tech-vla/luzheng/ICML/causal_spafa_plan_dataset_long_kitchen/P01_01_part3/06_set_the_dining_table_for_one_person/frame_044_ts_154.79s.jpg"
+                }
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "placemat",
+                    "plate",
+                    "table"
+                ],
+                "materials": []
+            },
+            "causal_challenge_question": "What if the table surface was highly uneven or sloped?",
+            "expected_challenge_outcome": "The plate would not sit stably. It could slide off the placemat or wobble during use, making it difficult to eat from and potentially causing spills.",
+            "failure_handling": {
+                "reason": "The plate is accidentally dropped and breaks while being placed on the table.",
+                "recovery_strategy": "Carefully collect and dispose of all broken pieces. Select a new plate from the cupboard and repeat the action of placing it on the table."
+            }
+        },
+        {
+            "step_id": 7,
+            "step_goal": "Finalize the cooking process and turn off the stove.",
+            "rationale": "This step concludes the sautéing phase. The final stir ensures the vegetables are perfectly cooked, and turning off the heat is a critical action to stop the cooking process and ensure safety.",
+            "preconditions": [
+                "Vegetables in the pan are fully cooked.",
+                "The stove burner is currently on."
+            ],
+            "expected_effects": [
+                "The application of heat to the pan is terminated.",
+                "The vegetables are ready to be served or used in the next stage of a recipe."
+            ],
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "stove control knob is in the 'off' position",
+                    "objects": [
+                        "stove_knob",
+                        "off_position"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "stove",
+                    "affordance_types": [
+                        "heat_source_inactive"
+                    ],
+                    "reasons": "The control knob has been turned, cutting power to the heating element."
+                }
+            ],
+            "predicted_next_actions": [
+                "Remove the pan from the burner",
+                "Serve the food from the pan onto the plate"
+            ],
+            "critical_frames": [
+                {
+                    "frame_index": 48,
+                    "action_description": "While stirring the cooked, steaming vegetables in the pan with a spatula in their right hand, the person uses their left hand to grip and rotate a control knob on the stove's front panel.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "fingers of the left hand are gripping the stove knob",
+                            "objects": [
+                                "fingers",
+                                "stove_knob"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "spatula is actively stirring vegetables in the pan",
+                            "objects": [
+                                "spatula",
+                                "vegetables",
+                                "pan"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "stove_knob",
+                            "affordance_types": [
+                                "rotatable",
+                                "graspable"
+                            ],
+                            "reasons": "The knob is designed to be gripped and turned by hand to control the stove's function."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "left_hand_fingers",
+                        "action": "are applying torque to",
+                        "patient": "stove_knob",
+                        "causal_effect_on_patient": "is rotating around its central axis from an 'on' position to an 'off' position",
+                        "causal_effect_on_environment": "The electrical circuit powering the heating element is interrupted, causing the burner to cease heat production and begin to cool down.",
+                        "causal_spatial_precondition": "The shape of the knob provides sufficient friction and leverage for the fingers to apply the necessary rotational force.",
+                        "causal_affordance_focus_detail": "The protruding, grippable shape of the knob affords rotation, acting as a direct mechanical interface to an internal switch that controls the stove's power state."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The protruding control knob on the stove's front panel, likely with ridges or a non-circular shape for grip.",
+                        "affordance_type": "rotatable_knob",
+                        "causal_role": "interface for state control"
+                    },
+                    "state_change_description": "The stove's power setting is being adjusted to the 'off' position, which will terminate the flow of heat to the burner.",
+                    "keyframe_image_path": "/e2e-data/evad-tech-vla/luzheng/ICML/causal_spafa_plan_dataset_long_kitchen/P01_01_part3/07_finalize_the_cooking_process_and_turn_off_the_stove/frame_048_ts_169.19s.jpg"
+                }
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "pan",
+                    "spatula",
+                    "stove"
+                ],
+                "materials": [
+                    "cooked celery"
+                ]
+            },
+            "causal_challenge_question": "What if the control knob was stuck and could not be turned?",
+            "expected_challenge_outcome": "The burner would remain on, continuing to heat the pan and overcooking or burning the food. The person would have to physically move the pan off the burner to stop the cooking and then address the mechanical failure of the knob or turn off the stove at the circuit breaker for safety.",
+            "failure_handling": {
+                "reason": "The person gets distracted and forgets to turn off the burner after the final stir.",
+                "recovery_strategy": "Rely on secondary cues like the smell of burning food or the sound of excessive sizzling. Upon noticing the error, immediately return to the stove, turn off the knob, and remove the pan from the hot burner."
+            }
+        }
+    ]
+}

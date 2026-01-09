@@ -1,0 +1,139 @@
+================================================================================
+Task Plan: Reconfigure the modular office space to create a formal presentation area centered around the main table.
+================================================================================
+
+
+--- Step 1: Reposition the main work table to serve as a central lectern. ---
+
+  [Rationale]
+  To create a focal point for the presentation, the main table must be moved from its position against the wall to a more central location. This defines the 'front' of the room.
+
+  [Navigation & Manipulation]
+  I will approach the wooden work table. I'll disengage the caster locks if they are set, then push the table towards the center of the carpeted area, ensuring there is enough space around it to serve as a presentation stage.
+
+  [Preconditions]
+  - The agent is inside the common area.
+  - The work table is in its initial position near the glass wall.
+
+
+  [Expected Effects]
+  - The work table is now centrally located in the open space.
+  - A focal point for the presentation setup has been established.
+
+
+  [Failure Handling]
+  - Reason: The table's caster wheels are locked and the table won't move.
+  - Recovery: Systematically scan the base of each of the four legs to locate and operate the locking lever on each caster. Once all wheels are confirmed to be unlocked, attempt to push the table again.
+
+
+--- Step 2: Clear the designated audience area by relocating the lounge furniture. ---
+
+  [Rationale]
+  The lounge chair and side table are currently occupying the space needed for audience seating. They must be moved to create an unobstructed viewing area.
+
+  [Navigation & Manipulation]
+  I will navigate to the corner where the grey lounge chair and small side table are located. First, I'll push the grey lounge chair along the wall to the far end of the space, out of the primary activity zone. Then, I will return for the small round side table and push it to a position next to the relocated lounge chair.
+
+  [Preconditions]
+  - The main table has been repositioned (Step 1 complete).
+  - The lounge chair and side table are in their initial corner position.
+
+
+  [Expected Effects]
+  - The area intended for audience seating is now empty and ready for chair arrangement.
+  - The lounge furniture is neatly stored out of the way.
+
+
+  [Failure Handling]
+  - Reason: The lounge chair is heavier than anticipated and its path is blocked by other furniture.
+  - Recovery: Pause the push action. Re-scan the area to plot a clear, alternative path. If necessary, perform a small, temporary move of an obstructing object before resuming the relocation of the lounge chair.
+
+
+--- Step 3: Arrange the first row of audience seating using two modular chairs. ---
+
+  [Rationale]
+  This step begins the construction of the audience seating block, establishing the front row and setting the distance and alignment for subsequent rows.
+
+  [Navigation & Manipulation]
+  I will go to the line of blue and black modular chairs. I will take the first chair and push it into the cleared space, positioning it to face the central table at an appropriate viewing distance. I will then retrieve a second modular chair and place it neatly beside the first, forming a two-chair front row.
+
+  [Preconditions]
+  - The audience area is clear (Step 2 complete).
+  - The modular chairs are lined up along the glass wall.
+
+
+  [Expected Effects]
+  - A front row of two audience chairs is now arranged facing the presentation table.
+
+
+  [Failure Handling]
+  - Reason: The chairs do not align properly or are at an incorrect distance from the table.
+  - Recovery: After placing both chairs, I will perform a final adjustment pass, nudging each chair slightly to ensure they are parallel to the table and aligned with each other.
+
+
+--- Step 4: Arrange the second row of audience seating. ---
+
+  [Rationale]
+  To increase the seating capacity of the presentation area, a second row is required. This builds upon the first row to create a larger audience block.
+
+  [Navigation & Manipulation]
+  I will return to the line of modular chairs. I will push a third chair and position it directly behind the first chair of the front row. I will repeat this process with a fourth chair, placing it behind the second chair of the front row to complete the four-person audience section.
+
+  [Preconditions]
+  - The front row of seating is in place (Step 3 complete).
+  - At least two modular chairs remain in their original location.
+
+
+  [Expected Effects]
+  - A second row of two audience chairs is arranged, completing a 2x2 seating block.
+
+
+  [Failure Handling]
+  - Reason: The spacing between the front and back rows is insufficient, blocking the walkway.
+  - Recovery: I will push the entire back row backwards as a single unit to create more legroom and a clearer aisle. I will then verify the alignment of all four chairs.
+
+
+--- Step 5: Position the black office chairs for the presenters. ---
+
+  [Rationale]
+  The two black office chairs are distinct from the audience seats and are better suited for speakers at the presentation table. They need to be moved into position.
+
+  [Navigation & Manipulation]
+  I will navigate to where the two black office chairs were originally located. I will push each chair, one at a time, to the presentation table and tuck them in on either side, facing the audience area.
+
+  [Preconditions]
+  - The main table is in its central position (Step 1 complete).
+  - The office chairs are in their initial positions.
+
+
+  [Expected Effects]
+  - The two black office chairs are now positioned at the presentation table, ready for speakers.
+
+
+  [Failure Handling]
+  - Reason: A chair rolls away uncontrollably after being pushed.
+  - Recovery: I will cease pushing and track the chair's movement. Once it has stopped, I will approach it again and re-attempt the positioning maneuver with a slower, more controlled push.
+
+
+--- Step 6: Consolidate any remaining unused furniture. ---
+
+  [Rationale]
+  To finalize the setup and ensure the space is tidy and free of obstructions, any leftover furniture must be organized and stored neatly.
+
+  [Navigation & Manipulation]
+  I will scan the area for any remaining modular chairs that were not used for the audience. I will go to each one and push it flush against the glass wall, grouping it with other unused items to keep the main pathways clear.
+
+  [Preconditions]
+  - Audience and presenter seating is fully arranged (Steps 3, 4, 5 complete).
+
+
+  [Expected Effects]
+  - The entire presentation area is fully configured and tidy.
+  - All unused furniture is consolidated and stored out of the way.
+  - The high-level goal is achieved.
+
+
+  [Failure Handling]
+  - Reason: The consolidated furniture looks messy or still obstructs a minor pathway.
+  - Recovery: I will perform a final tidying action, nudging the stored chairs into a single, compact line against the wall to maximize open space and improve the area's overall appearance.
+

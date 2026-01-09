@@ -1,0 +1,164 @@
+================================================================================
+Task Plan: Reconfigure the hotel room from its cluttered, multi-use state into an organized and comfortable setup for evening relaxation and movie watching.
+================================================================================
+
+
+--- Step 1: Consolidate luggage to clear the main walkway. ---
+
+  [Rationale]
+  The suitcase and bags on the floor are a trip hazard and block the path between the bed and the seating area. Moving them first is a critical step to ensure safe and efficient movement for subsequent tasks.
+
+  [Navigation & Manipulation]
+  Navigate to the foot of the bed where the open suitcase is located. Grasp the suitcase. Carry the suitcase over to the wall space next to the room's entrance door and place it down, out of the main traffic path.
+
+  [Preconditions]
+  - The suitcase is on the floor in the middle of the room.
+  - There is available floor space near the entrance door.
+
+
+  [Expected Effects]
+  - The main walkway in the room is clear of luggage.
+  - The suitcase is stored in a consolidated, low-traffic area.
+
+
+  [Failure Handling]
+  - Reason: The suitcase is too heavy or awkward to lift and carry safely.
+  - Recovery: Instead of lifting, grasp the handle and slide the suitcase across the carpeted floor to the designated spot near the entrance door.
+
+
+--- Step 2: Clear the clothes from the upholstered armchair. ---
+
+  [Rationale]
+  One of the two primary relaxation chairs is unusable because it is covered with clothes. To prepare the seating area, this chair must be cleared.
+
+  [Navigation & Manipulation]
+  Move toward the seating area and approach the armchair that has a pile of clothes on it. Pick up the entire pile of clothes and transfer it to the surface of the nearest unused bed for the user to sort later.
+
+  [Preconditions]
+  - One armchair has clothes on it.
+  - There is empty surface space on at least one bed.
+
+
+  [Expected Effects]
+  - The armchair is clear and available for seating.
+  - The clothes are consolidated in a single, out-of-the-way location.
+
+
+  [Failure Handling]
+  - Reason: The pile of clothes is loose and items fall to the floor during transfer.
+  - Recovery: Pause the transfer. Pick up any fallen items from the floor. Re-gather the clothes into a more compact bundle and attempt the transfer again with a more secure grip.
+
+
+--- Step 3: Clear the surface of the small round table. ---
+
+  [Rationale]
+  The small table is cluttered with what appears to be trash and miscellaneous items, preventing its use. Clearing it is necessary to complete the tidying of the relaxation area and make it functional.
+
+  [Navigation & Manipulation]
+  Approach the small round table between the two armchairs. Perform a 'surface clearing' action by sweeping all items from the tabletop directly into the trash bin located under the main desk.
+
+  [Preconditions]
+  - The small round table has items on its surface.
+  - A trash bin is accessible nearby.
+
+
+  [Expected Effects]
+  - The surface of the small round table is clear.
+  - Clutter from the table has been disposed of.
+
+
+  [Failure Handling]
+  - Reason: Perception indicates a non-trash item (e.g., a phone or wallet) is amongst the clutter.
+  - Recovery: Abort the clearing action. Instead, consolidate all items from the small table and place them in a neat pile on the corner of the main desk for the user to inspect and sort.
+
+
+--- Step 4: Reposition the two armchairs to face the television. ---
+
+  [Rationale]
+  The current arrangement of the armchairs is conversational. To create a movie-watching setup, they must be reoriented to provide a clear and comfortable view of the television screen.
+
+  [Navigation & Manipulation]
+  Go to the first armchair, grasp it, and rotate it to face the dresser where the television sits. Then, go to the second armchair, grasp it, and move it to be side-by-side with the first, also facing the television.
+
+  [Preconditions]
+  - Both armchairs are clear of items.
+  - The floor space in front of the television is clear enough for repositioning.
+
+
+  [Expected Effects]
+  - Both armchairs are now arranged as a pair facing the television.
+
+
+  [Failure Handling]
+  - Reason: An armchair snags on the carpet and resists movement.
+  - Recovery: Stop pushing. Attempt to lift one side of the chair slightly to un-snag it, then continue sliding it into position. Use a rocking or shuffling motion if direct sliding fails.
+
+
+--- Step 5: Relocate the small table to serve the rearranged armchairs. ---
+
+  [Rationale]
+  With the armchairs in their new position, the table is no longer conveniently located. It must be moved to function as a shared side table for the new seating arrangement.
+
+  [Navigation & Manipulation]
+  Go to the now-cleared small round table. Grasp and slide it across the floor to a new position, placing it either between the two reoriented armchairs or to one side, ensuring it is reachable from both.
+
+  [Preconditions]
+  - The armchairs have been moved to their new positions.
+  - The table surface is clear.
+
+
+  [Expected Effects]
+  - The small table is accessible from the movie-watching seats.
+  - The relaxation zone is fully configured.
+
+
+  [Failure Handling]
+  - Reason: The table is top-heavy and feels unstable to move.
+  - Recovery: Place manipulators lower on the table's pedestal to lower the center of gravity. Use a slow, controlled sliding motion instead of lifting to minimize the risk of tipping.
+
+
+--- Step 6: Tuck in the desk chair to maximize open space. ---
+
+  [Rationale]
+  The work area is not part of the relaxation setup. Stowing the desk chair neatly under the desk clears a major walkway and makes the room feel more spacious and orderly.
+
+  [Navigation & Manipulation]
+  Walk over to the workspace. Grasp the back of the rolling desk chair and push it forward until it is neatly tucked into the kneehole of the desk.
+
+  [Preconditions]
+  - The desk chair is currently pulled out from the desk.
+
+
+  [Expected Effects]
+  - The desk chair is stored under the desk.
+  - The floor space between the desk and the beds is maximized.
+
+
+  [Failure Handling]
+  - Reason: The chair's wheels are turned sideways and prevent it from rolling straight.
+  - Recovery: Pull the chair back slightly, then jiggle it side-to-side to straighten the wheels before attempting to push it forward again. Apply steady, even pressure.
+
+
+--- Step 7: Close the window curtains. ---
+
+  [Rationale]
+  A dark environment enhances the movie-watching experience by reducing glare on the television screen and creating a more immersive, theater-like atmosphere.
+
+  [Navigation & Manipulation]
+  Navigate to the wall with the window. Reach up and grasp the leading edge of the main curtain. Pull the curtain horizontally along its track until the window is completely covered.
+
+  [Preconditions]
+  - The path to the window is clear.
+  - The curtains are currently open.
+
+
+  [Expected Effects]
+  - The window is covered, and the room is significantly darker.
+  - The room's ambiance is set for watching a movie.
+  - The high-level goal is achieved.
+
+
+  [Failure Handling]
+  - Reason: The curtain is stuck on the rail and will not move.
+  - Recovery: Cease pulling to avoid damage. Gently tug the curtain back in the opposite direction a few inches, then try pulling it closed again. This can often free a snagged roller.
+

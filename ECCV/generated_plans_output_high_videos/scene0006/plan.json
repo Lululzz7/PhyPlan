@@ -1,0 +1,144 @@
+{
+    "scene_description": "The video tour depicts a furnished hotel room with a somewhat lived-in and cluttered state. The room contains two large beds with white linens, a wooden desk with a rolling chair, and a separate seating area. This area includes two upholstered armchairs, a small round table, and a dresser with a television on it. An open suitcase and some bags are on the floor near one of the beds, obstructing the walkway. One of the armchairs is covered with a pile of clothes, and the small table is cluttered. The room is illuminated by warm lamplight and natural light from a window covered by curtains. The overall layout suggests a space used for both rest and work, which is currently in need of tidying and reconfiguration for relaxation.",
+    "key_objects_for_planning": [
+        "bed",
+        "desk",
+        "desk_chair",
+        "dresser",
+        "television",
+        "upholstered_armchair",
+        "small_round_table",
+        "suitcase",
+        "window_curtains",
+        "trash_bin"
+    ],
+    "high_level_goal": "Reconfigure the hotel room from its cluttered, multi-use state into an organized and comfortable setup for evening relaxation and movie watching.",
+    "steps": [
+        {
+            "step_id": 1,
+            "step_goal": "Consolidate luggage to clear the main walkway.",
+            "rationale": "The suitcase and bags on the floor are a trip hazard and block the path between the bed and the seating area. Moving them first is a critical step to ensure safe and efficient movement for subsequent tasks.",
+            "navigation_and_manipulation": "Navigate to the foot of the bed where the open suitcase is located. Grasp the suitcase. Carry the suitcase over to the wall space next to the room's entrance door and place it down, out of the main traffic path.",
+            "preconditions": [
+                "The suitcase is on the floor in the middle of the room.",
+                "There is available floor space near the entrance door."
+            ],
+            "expected_effects": [
+                "The main walkway in the room is clear of luggage.",
+                "The suitcase is stored in a consolidated, low-traffic area."
+            ],
+            "failure_handling": {
+                "reason": "The suitcase is too heavy or awkward to lift and carry safely.",
+                "recovery_strategy": "Instead of lifting, grasp the handle and slide the suitcase across the carpeted floor to the designated spot near the entrance door."
+            }
+        },
+        {
+            "step_id": 2,
+            "step_goal": "Clear the clothes from the upholstered armchair.",
+            "rationale": "One of the two primary relaxation chairs is unusable because it is covered with clothes. To prepare the seating area, this chair must be cleared.",
+            "navigation_and_manipulation": "Move toward the seating area and approach the armchair that has a pile of clothes on it. Pick up the entire pile of clothes and transfer it to the surface of the nearest unused bed for the user to sort later.",
+            "preconditions": [
+                "One armchair has clothes on it.",
+                "There is empty surface space on at least one bed."
+            ],
+            "expected_effects": [
+                "The armchair is clear and available for seating.",
+                "The clothes are consolidated in a single, out-of-the-way location."
+            ],
+            "failure_handling": {
+                "reason": "The pile of clothes is loose and items fall to the floor during transfer.",
+                "recovery_strategy": "Pause the transfer. Pick up any fallen items from the floor. Re-gather the clothes into a more compact bundle and attempt the transfer again with a more secure grip."
+            }
+        },
+        {
+            "step_id": 3,
+            "step_goal": "Clear the surface of the small round table.",
+            "rationale": "The small table is cluttered with what appears to be trash and miscellaneous items, preventing its use. Clearing it is necessary to complete the tidying of the relaxation area and make it functional.",
+            "navigation_and_manipulation": "Approach the small round table between the two armchairs. Perform a 'surface clearing' action by sweeping all items from the tabletop directly into the trash bin located under the main desk.",
+            "preconditions": [
+                "The small round table has items on its surface.",
+                "A trash bin is accessible nearby."
+            ],
+            "expected_effects": [
+                "The surface of the small round table is clear.",
+                "Clutter from the table has been disposed of."
+            ],
+            "failure_handling": {
+                "reason": "Perception indicates a non-trash item (e.g., a phone or wallet) is amongst the clutter.",
+                "recovery_strategy": "Abort the clearing action. Instead, consolidate all items from the small table and place them in a neat pile on the corner of the main desk for the user to inspect and sort."
+            }
+        },
+        {
+            "step_id": 4,
+            "step_goal": "Reposition the two armchairs to face the television.",
+            "rationale": "The current arrangement of the armchairs is conversational. To create a movie-watching setup, they must be reoriented to provide a clear and comfortable view of the television screen.",
+            "navigation_and_manipulation": "Go to the first armchair, grasp it, and rotate it to face the dresser where the television sits. Then, go to the second armchair, grasp it, and move it to be side-by-side with the first, also facing the television.",
+            "preconditions": [
+                "Both armchairs are clear of items.",
+                "The floor space in front of the television is clear enough for repositioning."
+            ],
+            "expected_effects": [
+                "Both armchairs are now arranged as a pair facing the television."
+            ],
+            "failure_handling": {
+                "reason": "An armchair snags on the carpet and resists movement.",
+                "recovery_strategy": "Stop pushing. Attempt to lift one side of the chair slightly to un-snag it, then continue sliding it into position. Use a rocking or shuffling motion if direct sliding fails."
+            }
+        },
+        {
+            "step_id": 5,
+            "step_goal": "Relocate the small table to serve the rearranged armchairs.",
+            "rationale": "With the armchairs in their new position, the table is no longer conveniently located. It must be moved to function as a shared side table for the new seating arrangement.",
+            "navigation_and_manipulation": "Go to the now-cleared small round table. Grasp and slide it across the floor to a new position, placing it either between the two reoriented armchairs or to one side, ensuring it is reachable from both.",
+            "preconditions": [
+                "The armchairs have been moved to their new positions.",
+                "The table surface is clear."
+            ],
+            "expected_effects": [
+                "The small table is accessible from the movie-watching seats.",
+                "The relaxation zone is fully configured."
+            ],
+            "failure_handling": {
+                "reason": "The table is top-heavy and feels unstable to move.",
+                "recovery_strategy": "Place manipulators lower on the table's pedestal to lower the center of gravity. Use a slow, controlled sliding motion instead of lifting to minimize the risk of tipping."
+            }
+        },
+        {
+            "step_id": 6,
+            "step_goal": "Tuck in the desk chair to maximize open space.",
+            "rationale": "The work area is not part of the relaxation setup. Stowing the desk chair neatly under the desk clears a major walkway and makes the room feel more spacious and orderly.",
+            "navigation_and_manipulation": "Walk over to the workspace. Grasp the back of the rolling desk chair and push it forward until it is neatly tucked into the kneehole of the desk.",
+            "preconditions": [
+                "The desk chair is currently pulled out from the desk."
+            ],
+            "expected_effects": [
+                "The desk chair is stored under the desk.",
+                "The floor space between the desk and the beds is maximized."
+            ],
+            "failure_handling": {
+                "reason": "The chair's wheels are turned sideways and prevent it from rolling straight.",
+                "recovery_strategy": "Pull the chair back slightly, then jiggle it side-to-side to straighten the wheels before attempting to push it forward again. Apply steady, even pressure."
+            }
+        },
+        {
+            "step_id": 7,
+            "step_goal": "Close the window curtains.",
+            "rationale": "A dark environment enhances the movie-watching experience by reducing glare on the television screen and creating a more immersive, theater-like atmosphere.",
+            "navigation_and_manipulation": "Navigate to the wall with the window. Reach up and grasp the leading edge of the main curtain. Pull the curtain horizontally along its track until the window is completely covered.",
+            "preconditions": [
+                "The path to the window is clear.",
+                "The curtains are currently open."
+            ],
+            "expected_effects": [
+                "The window is covered, and the room is significantly darker.",
+                "The room's ambiance is set for watching a movie.",
+                "The high-level goal is achieved."
+            ],
+            "failure_handling": {
+                "reason": "The curtain is stuck on the rail and will not move.",
+                "recovery_strategy": "Cease pulling to avoid damage. Gently tug the curtain back in the opposite direction a few inches, then try pulling it closed again. This can often free a snagged roller."
+            }
+        }
+    ],
+    "sample_frames_dir": "/e2e-data/evad-tech-vla/luzheng/ICML/generated_plans_output_high_videos/scene0006/sampled_frames"
+}

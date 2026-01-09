@@ -19,3 +19,15 @@ venv/
 causal_spafa_plan_dataset*/
 generated_plans_output_*/
 __locks__/
+
+# Allow committing selected ECCV datasets
+!ECCV/causal_spafa_plan_dataset_long/
+!ECCV/causal_spafa_plan_dataset_long/**
+!ECCV/causal_spafa_plan_dataset_medium/
+!ECCV/causal_spafa_plan_dataset_medium/**
+!ECCV/causal_spafa_plan_dataset_short/
+!ECCV/causal_spafa_plan_dataset_short/**
+!ECCV/generated_plans_output_high_images/
+!ECCV/generated_plans_output_high_images/**
+!ECCV/generated_plans_output_high_videos/
+!ECCV/generated_plans_output_high_videos/**

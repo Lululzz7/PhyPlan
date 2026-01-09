@@ -1,0 +1,179 @@
+{
+    "steps": [
+        {
+            "step_id": 1,
+            "critical_frames": [
+                {
+                    "frame_index": 2,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "right hand is gripping knife handle",
+                        "left hand is stabilizing zucchini slices",
+                        "knife blade is in contact with zucchini slices",
+                        "zucchini slices are on cutting board"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 2,
+            "critical_frames": [
+                {
+                    "frame_index": 21,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "cutting board is tilted above frying pan",
+                        "flat of knife blade is in contact with diced zucchini",
+                        "diced zucchini is near the edge of the cutting board"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 3,
+            "critical_frames": [
+                {
+                    "frame_index": 25,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": false,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "hand is inside open drawer",
+                        "hand is positioned above spatula handle",
+                        "spatula is inside utensil organizer"
+                    ],
+                    "unmatched_relations": [
+                        "The hand is not yet in contact with the spatula handle, but is positioned 'above' it, matching the description 'about to grasp'."
+                    ]
+                },
+                {
+                    "frame_index": 30,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "seasoning shaker is above frying pan",
+                        "seasoning shaker is inverted",
+                        "diced zucchini is inside frying pan"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 4,
+            "critical_frames": [
+                {
+                    "frame_index": 36,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "celery stalks are under water stream",
+                        "hands are holding celery stalks",
+                        "celery stalks are inside sink basin"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 5,
+            "critical_frames": [
+                {
+                    "frame_index": 42,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "knife blade is in contact with celery stalk",
+                        "left hand is stabilizing celery stalk",
+                        "celery stalk is on cutting board"
+                    ],
+                    "unmatched_relations": []
+                },
+                {
+                    "frame_index": 47,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "cutting board is above frying pan",
+                        "knife is pushing diced celery"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        },
+        {
+            "step_id": 6,
+            "critical_frames": [
+                {
+                    "frame_index": 49,
+                    "confidence": 1.0,
+                    "checks": {
+                        "objects_present": true,
+                        "contacts_consistent": true,
+                        "spatial_relations_consistent": true,
+                        "affordances_consistent": true,
+                        "causal_consistent": true,
+                        "temporal_consistent": true
+                    },
+                    "matched_relations": [
+                        "hand is grasping celery package",
+                        "celery package is no longer on the countertop (truth=false)"
+                    ],
+                    "unmatched_relations": []
+                }
+            ]
+        }
+    ]
+}

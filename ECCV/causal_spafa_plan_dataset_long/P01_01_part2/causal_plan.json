@@ -1,0 +1,808 @@
+{
+    "high_level_goal": "To prepare and cook diced zucchini and celery in a frying pan on a stovetop as part of a meal preparation.",
+    "steps": [
+        {
+            "step_id": 1,
+            "step_goal": "Dice pre-sliced zucchini rounds into smaller, uniform cubes on a cutting board.",
+            "rationale": "To increase the surface area of the zucchini for faster, more even cooking and to achieve a desired texture in the final dish. This is the first vegetable preparation step.",
+            "preconditions": [
+                "A whole zucchini has been previously sliced into rounds.",
+                "A clean cutting board and a sharp knife are available on the countertop."
+            ],
+            "expected_effects": [
+                "All zucchini rounds are processed into small, diced pieces.",
+                "The diced zucchini is ready to be transferred for cooking."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "knife",
+                    "cutting board"
+                ],
+                "materials": [
+                    "zucchini slices"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "diced zucchini pieces are on cutting board",
+                    "objects": [
+                        "diced_zucchini",
+                        "cutting_board"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "zucchini",
+                    "affordance_types": [
+                        "diced",
+                        "ready_to_cook"
+                    ],
+                    "reasons": "The zucchini has been physically transformed from slices into smaller cubes, making it suitable for cooking."
+                }
+            ],
+            "predicted_next_actions": [
+                "Transfer diced zucchini to a pan",
+                "Chop another vegetable",
+                "Season the zucchini"
+            ],
+            "causal_challenge_question": "What if the cutting board was slippery and not stable on the counter?",
+            "expected_challenge_outcome": "The board would slide during the application of downward and forward force from the knife. This would make chopping inefficient, dangerous, and would prevent the creation of uniform cuts as the vegetable would move unpredictably relative to the blade.",
+            "failure_handling": {
+                "reason": "The user accidentally cuts a piece of zucchini much larger or smaller than the others.",
+                "recovery_strategy": "Isolate the non-uniform piece and re-chop it to match the size of the others to ensure even cooking."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user is holding a knife in their right hand and using their left hand to stabilize a stack of zucchini slices. The knife is positioned to make a vertical cut through the stack.",
+                    "state_change_description": "The knife blade is beginning to sever the stack of zucchini slices, initiating the dicing process.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "right hand is gripping knife handle",
+                            "objects": [
+                                "right_hand",
+                                "knife_handle"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "left hand is stabilizing zucchini slices",
+                            "objects": [
+                                "left_hand",
+                                "zucchini_slices"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "knife blade is in contact with zucchini slices",
+                            "objects": [
+                                "knife_blade",
+                                "zucchini_slices"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "zucchini slices are on cutting board",
+                            "objects": [
+                                "zucchini_slices",
+                                "cutting_board"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "knife",
+                            "affordance_types": [
+                                "cuttability",
+                                "sharp"
+                            ],
+                            "reasons": "The knife is being used for a cutting task, implying it possesses the necessary sharpness."
+                        },
+                        {
+                            "object_name": "zucchini",
+                            "affordance_types": [
+                                "sliceable"
+                            ],
+                            "reasons": "The zucchini's soft flesh allows it to be easily divided by the knife."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "knife_blade",
+                        "action": "is applying concentrated downward force",
+                        "patient": "zucchini_slices",
+                        "causal_effect_on_patient": "is undergoing cellular-level shear and fracture, leading to separation along the cut line.",
+                        "causal_effect_on_environment": "The zucchini stack is being divided into smaller vertical strips.",
+                        "causal_spatial_precondition": "The knife's sharp edge is oriented perpendicularly to the surface of the zucchini and is in direct contact with it. This geometric arrangement ensures that the force applied by the hand is maximally concentrated onto a very small area.",
+                        "causal_affordance_focus_detail": "The 'cutting_edge' of the knife blade acts as a stress concentrator. The force from the user's hand is transmitted through the rigid body of the knife to this edge, creating pressure that exceeds the zucchini's material shear strength, thereby initiating a cut."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The thin, sharpened metal edge of the knife blade.",
+                        "affordance_type": "cutting_edge",
+                        "causal_role": "point of force concentration"
+                    }
+                }
+            ]
+        },
+        {
+            "step_id": 2,
+            "step_goal": "Transfer the diced zucchini from the cutting board into the frying pan.",
+            "rationale": "To move the prepared ingredient to the cooking vessel, which is the necessary next step before applying heat.",
+            "preconditions": [
+                "All zucchini is diced and resting on the cutting board.",
+                "A frying pan is accessible on the stovetop."
+            ],
+            "expected_effects": [
+                "The cutting board is now empty of zucchini.",
+                "The frying pan now contains the diced zucchini."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "knife",
+                    "cutting board",
+                    "frying_pan"
+                ],
+                "materials": [
+                    "diced_zucchini"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "diced zucchini is inside frying pan",
+                    "objects": [
+                        "diced_zucchini",
+                        "frying_pan"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "frying_pan",
+                    "affordance_types": [
+                        "contains_ingredients",
+                        "ready_for_heating"
+                    ],
+                    "reasons": "The pan now holds the food to be cooked."
+                }
+            ],
+            "predicted_next_actions": [
+                "Turn on the stove",
+                "Add seasoning to the pan",
+                "Add another ingredient to the pan"
+            ],
+            "causal_challenge_question": "What if the knife was used sharp-side down to scrape the vegetables?",
+            "expected_challenge_outcome": "Scraping with the sharp edge would cause it to drag and catch on the plastic cutting board, potentially damaging both the knife's edge (dulling it) and the board's surface (creating grooves). It would be a less efficient transfer and would degrade the tool.",
+            "failure_handling": {
+                "reason": "Some pieces of zucchini fall onto the stovetop or floor during the transfer.",
+                "recovery_strategy": "Pick up the stray pieces and discard them. Continue transferring the remaining zucchini, possibly using a more controlled motion or a smaller tilt angle on the board."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user holds the cutting board with their left hand, tilting it over a frying pan. With their right hand, they use the flat side of the knife blade to push the pile of diced zucchini towards the edge of the board.",
+                    "state_change_description": "The first pieces of zucchini are beginning to slide off the edge of the cutting board and fall into the pan below.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "cutting board is tilted above frying pan",
+                            "objects": [
+                                "cutting_board",
+                                "frying_pan"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "flat of knife blade is in contact with diced zucchini",
+                            "objects": [
+                                "knife_blade",
+                                "diced_zucchini"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "diced zucchini is near the edge of the cutting board",
+                            "objects": [
+                                "diced_zucchini",
+                                "cutting_board"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "knife",
+                            "affordance_types": [
+                                "scraping_surface"
+                            ],
+                            "reasons": "The broad, flat side of the knife is being used to push loose items, a common secondary use for a chef's knife."
+                        },
+                        {
+                            "object_name": "cutting_board",
+                            "affordance_types": [
+                                "transportable",
+                                "slideable_surface"
+                            ],
+                            "reasons": "The board is lightweight enough to be lifted and tilted, and its surface allows the zucchini to slide when pushed."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "knife_blade",
+                        "action": "is applying lateral force",
+                        "patient": "diced_zucchini",
+                        "causal_effect_on_patient": "is having its static friction overcome, causing it to accelerate and slide across the surface of the cutting board.",
+                        "causal_effect_on_environment": "The mass of zucchini is moving towards the pan as it falls off the board's edge under the influence of gravity.",
+                        "causal_spatial_precondition": "The cutting board is positioned with its edge over the opening of the pan and tilted, creating a path for the zucchini to travel. Gravity provides the final force for transfer once the zucchini clears the board's edge.",
+                        "causal_affordance_focus_detail": "The 'scraping_surface' of the knife (its flat side) provides a broad, rigid plane to efficiently apply force across a large number of loose zucchini pieces simultaneously, enabling them to be moved as a group."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The flat, non-cutting side of the knife blade.",
+                        "affordance_type": "scraping_surface",
+                        "causal_role": "force application surface"
+                    }
+                }
+            ]
+        },
+        {
+            "step_id": 3,
+            "step_goal": "Retrieve a spatula from a drawer and season the zucchini.",
+            "rationale": "To acquire the proper tool for stirring food in a pan and to add flavor to the zucchini before or during cooking.",
+            "preconditions": [
+                "Zucchini is in the pan.",
+                "A drawer with utensils is accessible.",
+                "Seasoning is available near the stove."
+            ],
+            "expected_effects": [
+                "The person is equipped with a spatula.",
+                "Seasoning has been added to the zucchini."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "spatula",
+                    "seasoning_shaker",
+                    "frying_pan"
+                ],
+                "materials": [
+                    "diced_zucchini",
+                    "seasoning"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "seasoning is on diced zucchini",
+                    "objects": [
+                        "seasoning",
+                        "diced_zucchini"
+                    ],
+                    "truth": true
+                },
+                {
+                    "relation": "person is holding spatula",
+                    "objects": [
+                        "person",
+                        "spatula"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "diced_zucchini",
+                    "affordance_types": [
+                        "seasoned"
+                    ],
+                    "reasons": "A flavoring agent has been added to the vegetable."
+                }
+            ],
+            "predicted_next_actions": [
+                "Stir the zucchini with the spatula",
+                "Turn on the heat",
+                "Prepare another ingredient"
+            ],
+            "causal_challenge_question": "What if the seasoning shaker's holes were clogged?",
+            "expected_challenge_outcome": "Inverting and shaking the shaker would not release any seasoning. The user would have to apply more force (tapping it), or manually clear the holes, or remove the cap entirely to get the seasoning out, which could lead to pouring too much.",
+            "failure_handling": {
+                "reason": "The person drops the spatula on the floor while retrieving it.",
+                "recovery_strategy": "Pick up the spatula, wash it in the sink to ensure it's clean, dry it, and then proceed to use it for stirring."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user's right hand is reaching into an open utensil drawer and is about to grasp the handle of a black spatula.",
+                    "state_change_description": "The state of the spatula is about to change from 'at rest in drawer' to 'being grasped'.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "hand is inside open drawer",
+                            "objects": [
+                                "hand",
+                                "drawer"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "hand is positioned above spatula handle",
+                            "objects": [
+                                "hand",
+                                "spatula_handle"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "spatula is inside utensil organizer",
+                            "objects": [
+                                "spatula",
+                                "utensil_organizer"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "spatula_handle",
+                            "affordance_types": [
+                                "graspable"
+                            ],
+                            "reasons": "Its shape and size are suitable for being held by a human hand."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "hand",
+                        "action": "is preparing to apply gripping force",
+                        "patient": "spatula_handle",
+                        "causal_effect_on_patient": "is about to be subjected to a normal force from the fingers and palm, which will generate static friction.",
+                        "causal_effect_on_environment": "The spatula is about to be lifted from its resting place in the drawer.",
+                        "causal_spatial_precondition": "The hand is shaped into a pre-grasp posture and positioned directly over the handle, allowing the fingers to close around it effectively. This proximity and alignment are essential for a successful grasp.",
+                        "causal_affordance_focus_detail": "The 'graspable' nature of the handle allows the fingers to curl around it, creating opposing forces. This enables the generation of sufficient friction to overcome the force of gravity on the spatula, allowing it to be lifted and manipulated."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The elongated, cylindrical part of the spatula designed to be held.",
+                        "affordance_type": "grabbable_handle",
+                        "causal_role": "lever for manipulation and point of force application"
+                    }
+                },
+                {
+                    "action_description": "The user is holding a white seasoning shaker inverted over the pan of zucchini, dispensing a white powder onto the vegetables.",
+                    "state_change_description": "Seasoning is being transferred from the shaker to the surface of the zucchini in the pan.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "seasoning shaker is above frying pan",
+                            "objects": [
+                                "seasoning_shaker",
+                                "frying_pan"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "seasoning shaker is inverted",
+                            "objects": [
+                                "seasoning_shaker"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "diced zucchini is inside frying pan",
+                            "objects": [
+                                "diced_zucchini",
+                                "frying_pan"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "seasoning_shaker",
+                            "affordance_types": [
+                                "dispensable"
+                            ],
+                            "reasons": "The shaker is designed with holes to release its contents when inverted."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "gravity",
+                        "action": "is pulling on seasoning particles",
+                        "patient": "seasoning",
+                        "causal_effect_on_patient": "is accelerating downwards through the shaker's holes and through the air.",
+                        "causal_effect_on_environment": "A fine powder of seasoning is being distributed over the zucchini in the pan.",
+                        "causal_spatial_precondition": "The shaker is inverted (oriented with its opening facing down) and positioned directly over the target (the pan). This alignment allows gravity to act as the primary force for dispensing the contents in the desired location.",
+                        "causal_affordance_focus_detail": "The 'dispensable' affordance, enabled by the perforated cap, allows gravity to pull individual grains of seasoning through the openings when the container is inverted. The size of the holes regulates the flow rate."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The perforated cap of the seasoning shaker.",
+                        "affordance_type": "dispensing_holes",
+                        "causal_role": "flow regulator"
+                    }
+                }
+            ]
+        },
+        {
+            "step_id": 4,
+            "step_goal": "Wash celery stalks in the sink.",
+            "rationale": "To clean the celery by removing potential dirt and contaminants before chopping and adding it to the dish, ensuring food safety.",
+            "preconditions": [
+                "Celery stalks have been removed from their packaging.",
+                "The kitchen sink is clear and the faucet is operational."
+            ],
+            "expected_effects": [
+                "The celery stalks are now clean and wet.",
+                "The celery is ready for the next preparation step (chopping)."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "sink",
+                    "faucet"
+                ],
+                "materials": [
+                    "celery_stalks",
+                    "water"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "celery stalks are wet",
+                    "objects": [
+                        "celery_stalks"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "celery_stalks",
+                    "affordance_types": [
+                        "cleaned",
+                        "ready_to_chop"
+                    ],
+                    "reasons": "The celery has been washed, making it hygienically safe for further preparation."
+                }
+            ],
+            "predicted_next_actions": [
+                "Dry the celery stalks",
+                "Carry celery to the cutting board",
+                "Chop the celery"
+            ],
+            "causal_challenge_question": "What if the water pressure was extremely low?",
+            "expected_challenge_outcome": "A low-pressure stream would have less kinetic energy, making it less effective at dislodging and washing away dirt. The user would need to spend more time and use more manual rubbing with their hands to achieve the same level of cleanliness.",
+            "failure_handling": {
+                "reason": "The user drops a celery stalk down the drain.",
+                "recovery_strategy": "Do not use the dropped stalk. Retrieve it from the drain and discard it. Continue washing the remaining stalks."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user is holding two celery stalks with both hands under a stream of running water inside a stainless steel sink. Water is splashing over the stalks and their hands.",
+                    "state_change_description": "The surfaces of the celery stalks are being wetted and rinsed by the flow of water.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "celery stalks are under water stream",
+                            "objects": [
+                                "celery_stalks",
+                                "water_stream"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "hands are holding celery stalks",
+                            "objects": [
+                                "hands",
+                                "celery_stalks"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "celery stalks are inside sink basin",
+                            "objects": [
+                                "celery_stalks",
+                                "sink_basin"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "water_stream",
+                            "affordance_types": [
+                                "cleansing"
+                            ],
+                            "reasons": "Flowing water has the physical properties to dislodge and carry away small particles like dirt."
+                        },
+                        {
+                            "object_name": "sink_basin",
+                            "affordance_types": [
+                                "containing",
+                                "draining"
+                            ],
+                            "reasons": "The sink contains the water during the washing process and allows it to drain away, preventing a mess."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "water_stream",
+                        "action": "is imparting kinetic energy and acting as a solvent",
+                        "patient": "celery_stalks",
+                        "causal_effect_on_patient": "is having surface contaminants (dirt) loosened and carried away by the water flow.",
+                        "causal_effect_on_environment": "Waste water carrying dirt is flowing down the sink drain.",
+                        "causal_spatial_precondition": "The celery stalks are physically positioned to intersect the path of the water stream from the faucet. This ensures direct contact between the cleaning agent (water) and the object to be cleaned.",
+                        "causal_affordance_focus_detail": "The 'cleansing' affordance of the water stream is utilized. Its momentum transfers force to dirt particles, breaking their adhesion to the celery surface, while the fluid nature of water allows it to surround and transport these particles away and down the drain."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The flowing column of water emitted from the faucet.",
+                        "affordance_type": "cleansing",
+                        "causal_role": "particle dislodger and transport medium"
+                    }
+                }
+            ]
+        },
+        {
+            "step_id": 5,
+            "step_goal": "Dice the washed celery stalks and transfer them to the pan.",
+            "rationale": "To prepare the second vegetable component of the dish and combine it with the zucchini to cook them together.",
+            "preconditions": [
+                "Celery is washed.",
+                "Cutting board and knife are available.",
+                "Pan with zucchini is on the stove."
+            ],
+            "expected_effects": [
+                "The celery is diced into small pieces.",
+                "The diced celery is now in the pan with the zucchini."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "knife",
+                    "cutting board",
+                    "frying_pan"
+                ],
+                "materials": [
+                    "celery_stalks",
+                    "diced_zucchini"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "diced celery is inside frying pan",
+                    "objects": [
+                        "diced_celery",
+                        "frying_pan"
+                    ],
+                    "truth": true
+                },
+                {
+                    "relation": "diced zucchini is inside frying pan",
+                    "objects": [
+                        "diced_zucchini",
+                        "frying_pan"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "celery",
+                    "affordance_types": [
+                        "diced",
+                        "ready_to_cook"
+                    ],
+                    "reasons": "The celery has been processed into a new state suitable for cooking."
+                },
+                {
+                    "object_name": "frying_pan",
+                    "affordance_types": [
+                        "contains_mixed_ingredients"
+                    ],
+                    "reasons": "The pan now contains a mixture of different vegetables."
+                }
+            ],
+            "predicted_next_actions": [
+                "Stir the combined vegetables",
+                "Add more seasoning or sauce",
+                "Continue cooking the mixture"
+            ],
+            "causal_challenge_question": "What if the celery was not held firmly by the non-cutting hand?",
+            "expected_challenge_outcome": "The curved and fibrous celery stalk would roll or shift under the pressure of the knife. This would result in uneven, angled cuts and would pose a significant safety risk, as the knife could easily slip off the vegetable and towards the user's fingers.",
+            "failure_handling": {
+                "reason": "During the transfer, some celery falls outside the pan.",
+                "recovery_strategy": "Use the knife or hand to collect the stray pieces from the stovetop and add them to the pan if the area is clean, otherwise discard them."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user is making repetitive downward chopping motions with a knife on a celery stalk, which is held in place on the green cutting board by their left hand. Several pieces have already been chopped.",
+                    "state_change_description": "A small, crescent-shaped piece of celery is being fully severed from the main stalk with each chop.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "knife blade is in contact with celery stalk",
+                            "objects": [
+                                "knife_blade",
+                                "celery_stalk"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "left hand is stabilizing celery stalk",
+                            "objects": [
+                                "left_hand",
+                                "celery_stalk"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "celery stalk is on cutting board",
+                            "objects": [
+                                "celery_stalk",
+                                "cutting_board"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "knife",
+                            "affordance_types": [
+                                "cuttability",
+                                "sharp"
+                            ],
+                            "reasons": "The knife is successfully dividing the fibrous celery, which implies it is sufficiently sharp."
+                        },
+                        {
+                            "object_name": "celery",
+                            "affordance_types": [
+                                "sliceable"
+                            ],
+                            "reasons": "The celery's structure, though fibrous, can be fractured by the concentrated pressure of a knife."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "knife_blade",
+                        "action": "is applying high pressure to a small area",
+                        "patient": "celery_stalk",
+                        "causal_effect_on_patient": "is experiencing shear failure of its fibrous vascular bundles and parenchyma tissue, resulting in a clean cut.",
+                        "causal_effect_on_environment": "A new, separate piece of diced celery is created and added to the pile on the cutting board.",
+                        "causal_spatial_precondition": "The sharp edge of the knife is placed in contact with the celery at a right angle to its long axis. The user's other hand provides a counter-force, preventing the stalk from moving away from the blade.",
+                        "causal_affordance_focus_detail": "The knife's 'cutting_edge' concentrates the downward force from the user's arm. This pressure exceeds the tensile and shear strength of the celery's fibers, causing them to break and the material to separate."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The sharp cutting edge of the knife blade.",
+                        "affordance_type": "cutting_edge",
+                        "causal_role": "stress concentrator"
+                    }
+                },
+                {
+                    "action_description": "The user is holding the green cutting board over the pan and using the flat of the knife to scrape the newly diced celery into the pan, which already contains zucchini.",
+                    "state_change_description": "The diced celery is falling from the cutting board and mixing with the diced zucchini in the pan.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "cutting board is above frying pan",
+                            "objects": [
+                                "cutting_board",
+                                "frying_pan"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "knife is pushing diced celery",
+                            "objects": [
+                                "knife",
+                                "diced_celery"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "frying_pan",
+                            "affordance_types": [
+                                "receptacle"
+                            ],
+                            "reasons": "The pan's concave shape allows it to receive and contain the incoming ingredients."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "knife_blade",
+                        "action": "is applying horizontal force",
+                        "patient": "diced_celery",
+                        "causal_effect_on_patient": "is sliding across the tilted board and falling over the edge due to the combined forces of the push and gravity.",
+                        "causal_effect_on_environment": "The celery is being added to the zucchini in the pan, creating a mixture of ingredients.",
+                        "causal_spatial_precondition": "The board is tilted at an angle, and its edge is held over the pan. This setup uses gravity to assist the transfer once the celery is pushed over the edge.",
+                        "causal_affordance_focus_detail": "The 'scraping_surface' (flat side) of the knife provides a wide, rigid pusher to move the many small pieces of celery together. This is more efficient than moving them by hand."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The flat, non-cutting side of the knife blade.",
+                        "affordance_type": "scraping_surface",
+                        "causal_role": "pusher for loose materials"
+                    }
+                }
+            ]
+        },
+        {
+            "step_id": 6,
+            "step_goal": "Clear the workspace by removing leftover ingredients.",
+            "rationale": "To tidy up the cooking area after the preparation phase is complete, which is a common part of the overall cooking workflow and maintains kitchen hygiene.",
+            "preconditions": [
+                "All necessary vegetables have been chopped and transferred to the pan.",
+                "There are leftover raw ingredients (celery packaging) on the counter."
+            ],
+            "expected_effects": [
+                "The countertop is clearer.",
+                "Leftover ingredients are ready to be stored or discarded."
+            ],
+            "tool_and_material_usage": {
+                "tools": [],
+                "materials": [
+                    "celery_package"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "celery package is in hand",
+                    "objects": [
+                        "celery_package",
+                        "hand"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "workspace",
+                    "affordance_types": [
+                        "partially_cleared"
+                    ],
+                    "reasons": "An item has been removed from the work surface, making it less cluttered."
+                }
+            ],
+            "predicted_next_actions": [
+                "Store leftover celery in the refrigerator",
+                "Throw away empty packaging in the bin",
+                "Wash the cutting board and knife"
+            ],
+            "causal_challenge_question": "What if the celery package was wet and slippery?",
+            "expected_challenge_outcome": "The coefficient of friction between the hand and the packaging would be reduced. The person would need to apply a greater gripping force (normal force) to generate enough static friction to securely lift and transport it without it slipping from their grasp.",
+            "failure_handling": {
+                "reason": "The person drops the leftover celery packaging on the floor.",
+                "recovery_strategy": "Pick up the packaging from the floor. If the celery inside is to be saved, check if it has become contaminated; if so, wash it again or discard it. Proceed to store or dispose of the item."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user is holding the plastic package containing the remaining celery stalks in their right hand, having just picked it up from the counter. They are moving towards a trash bin.",
+                    "state_change_description": "The celery package has been moved from a resting state on the counter to being transported by hand.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "hand is grasping celery package",
+                            "objects": [
+                                "hand",
+                                "celery_package"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "celery package is no longer on the countertop",
+                            "objects": [
+                                "celery_package",
+                                "countertop"
+                            ],
+                            "truth": false
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "celery_package",
+                            "affordance_types": [
+                                "graspable",
+                                "transportable"
+                            ],
+                            "reasons": "The package is light enough and shaped in a way that it can be easily picked up and carried."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "hand",
+                        "action": "is applying a gripping force",
+                        "patient": "celery_package",
+                        "causal_effect_on_patient": "is being held against the force of gravity by the static friction generated between the fingers and the plastic surface.",
+                        "causal_effect_on_environment": "The celery package is being relocated from the preparation area, likely towards a storage or disposal location.",
+                        "causal_spatial_precondition": "The fingers and palm of the hand are wrapped around the object, applying pressure from multiple directions. This opposition of forces is what constitutes a stable grip.",
+                        "causal_affordance_focus_detail": "The 'graspable' nature of the package allows the hand to apply a sufficient normal force. This force, multiplied by the coefficient of static friction, creates a friction force that counteracts the object's weight, allowing it to be lifted and moved."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The main body of the plastic celery package.",
+                        "affordance_type": "grabbable_handle",
+                        "causal_role": "surface for friction generation"
+                    }
+                }
+            ]
+        }
+    ]
+}

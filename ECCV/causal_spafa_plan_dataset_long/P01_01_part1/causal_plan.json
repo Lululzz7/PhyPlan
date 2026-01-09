@@ -1,0 +1,797 @@
+{
+    "high_level_goal": "Prepare ingredients for cooking by entering a kitchen, gathering vegetables and tools, washing the vegetables, and chopping them on a cutting board.",
+    "steps": [
+        {
+            "step_id": 1,
+            "step_goal": "Enter the kitchen, illuminate the space, and retrieve a cucumber and a carrot from the refrigerator.",
+            "rationale": "This initial step involves navigating to the food preparation area, ensuring sufficient lighting for safety and accuracy, and acquiring the primary raw ingredients from cold storage. It is the necessary prerequisite for all subsequent food preparation activities.",
+            "preconditions": [
+                "User is located outside the kitchen area.",
+                "Refrigerator contains the target vegetables.",
+                "The kitchen is initially dark or dimly lit."
+            ],
+            "expected_effects": [
+                "User is present inside the kitchen.",
+                "Kitchen is illuminated.",
+                "Required vegetables are in the user's possession, ready for transport to the workspace."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "light_switch",
+                    "refrigerator"
+                ],
+                "materials": [
+                    "cucumber",
+                    "carrot"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "cucumber and carrot are held by hand",
+                    "objects": [
+                        "cucumber",
+                        "carrot",
+                        "hand"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "cucumber",
+                    "affordance_types": [
+                        "transportable",
+                        "ready_for_washing"
+                    ],
+                    "reasons": "The cucumber has been successfully retrieved from storage and is now mobile and available for the next hygiene-related step."
+                }
+            ],
+            "predicted_next_actions": [
+                "Place vegetables on the countertop",
+                "Gather cooking utensils (knife, cutting board)"
+            ],
+            "causal_challenge_question": "What if the refrigerator drawer was jammed or stuck?",
+            "expected_challenge_outcome": "The user would need to apply a series of varying force vectors (pulling, wiggling) to overcome the static friction or obstruction. This would increase the task time and require more complex motor control and physical effort than a smooth pull.",
+            "failure_handling": {
+                "reason": "The user drops a vegetable while removing it from the refrigerator.",
+                "recovery_strategy": "The user would need to bend down, re-acquire the vegetable with their hand, inspect it for damage or dirt, and then proceed with the original plan."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user's right hand reaches towards a white object on the wall and presses it.",
+                    "state_change_description": "The ambient lighting in the scene dramatically increases, illuminating the kitchen environment.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "hand is in close proximity to light switch",
+                            "objects": [
+                                "hand",
+                                "light_switch"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "light_switch",
+                            "affordance_types": [
+                                "pressable"
+                            ],
+                            "reasons": "The switch is designed to be pressed to complete an electrical circuit, a function the user is about to exploit."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "finger",
+                        "action": "is applying compressive force",
+                        "patient": "light_switch",
+                        "causal_effect_on_patient": "is undergoing mechanical displacement, closing an internal electrical circuit.",
+                        "causal_effect_on_environment": "The room's light fixture is being activated, causing a rapid increase in photons and illuminating the space.",
+                        "causal_spatial_precondition": "The finger must be in direct contact with the surface of the switch to transfer force effectively.",
+                        "causal_affordance_focus_detail": "The 'pressable' surface of the switch acts as a force transducer. The applied normal force overcomes a small spring resistance, causing the internal contacts to meet and complete the circuit."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The flat, outer surface of the wall-mounted light switch.",
+                        "affordance_type": "pressable_surface",
+                        "causal_role": "point_of_force_application"
+                    }
+                },
+                {
+                    "action_description": "The user's right hand reaches into the lower vegetable drawer of the open refrigerator and grasps a carrot and a cucumber.",
+                    "state_change_description": "The cucumber and carrot are lifted from their resting position inside the drawer and are now being held by the user's hand.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "hand is inside refrigerator vegetable drawer",
+                            "objects": [
+                                "hand",
+                                "refrigerator_vegetable_drawer"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "cucumber and carrot are inside refrigerator vegetable drawer",
+                            "objects": [
+                                "cucumber",
+                                "carrot",
+                                "refrigerator_vegetable_drawer"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "cucumber",
+                            "affordance_types": [
+                                "graspable"
+                            ],
+                            "reasons": "Its size, shape, and rigidity allow it to be securely held by a human hand."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "hand",
+                        "action": "is applying a gripping force (friction and pressure)",
+                        "patient": "cucumber_and_carrot",
+                        "causal_effect_on_patient": "are being constrained and lifted against gravity.",
+                        "causal_effect_on_environment": "The vegetables are being removed from the refrigerator, transitioning from a cold storage state to an active preparation state.",
+                        "causal_spatial_precondition": "The fingers and palm must be positioned around the bodies of the vegetables to apply opposing forces, generating sufficient static friction to counteract gravity.",
+                        "causal_affordance_focus_detail": "The 'graspable' surfaces of the vegetables allow the hand to conform to their shape and apply a stable grip. The friction between the skin and vegetable surfaces prevents them from slipping."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The cylindrical bodies of the cucumber and carrot.",
+                        "affordance_type": "graspable_surface",
+                        "causal_role": "surface_for_friction_grip"
+                    }
+                }
+            ]
+        },
+        {
+            "step_id": 2,
+            "step_goal": "Assemble the preparation workspace by placing vegetables on the counter, then retrieving a cutting board and knife.",
+            "rationale": "To transition from ingredient gathering to processing, a dedicated workspace must be set up. This involves freeing the hands by placing the ingredients down, then acquiring the necessary tools (a cutting surface and a cutting instrument) from their storage locations.",
+            "preconditions": [
+                "Vegetables are held in hand.",
+                "Cutting board and knife are stored in cupboards/drawers.",
+                "Countertop space is available."
+            ],
+            "expected_effects": [
+                "Vegetables are resting on the counter.",
+                "A cutting board is placed on the counter, creating a designated cutting area.",
+                "A knife is retrieved and available for use."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "kitchen_cupboard",
+                    "cutlery_drawer",
+                    "cutting_board",
+                    "knife"
+                ],
+                "materials": [
+                    "cucumber",
+                    "carrot"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "cutting board is on counter",
+                    "objects": [
+                        "cutting_board",
+                        "counter"
+                    ],
+                    "truth": true
+                },
+                {
+                    "relation": "knife is on counter",
+                    "objects": [
+                        "knife",
+                        "counter"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "cutting_board",
+                    "affordance_types": [
+                        "cuttable_surface_ready"
+                    ],
+                    "reasons": "The board has been placed on a stable, flat surface, making it suitable and safe for chopping."
+                }
+            ],
+            "predicted_next_actions": [
+                "Wash vegetables in the sink"
+            ],
+            "causal_challenge_question": "What if the cutting board was stored at the very back of a crowded cupboard?",
+            "expected_challenge_outcome": "The user would need to perform a sequence of sub-tasks: remove items blocking the board, place them on the counter, retrieve the board, and then replace the other items. This would significantly increase the complexity and time required for this step.",
+            "failure_handling": {
+                "reason": "The user selects the wrong type of knife (e.g., a bread knife) for chopping vegetables.",
+                "recovery_strategy": "Upon realizing the tool is suboptimal for the task, the user would place the incorrect knife down, return to the drawer, and select a more appropriate one, such as a chef's knife or santoku."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user's hands are placing several items, including packaged celery, a container, and the previously retrieved carrot and cucumber, onto a wooden countertop.",
+                    "state_change_description": "The vegetables and other items transition from being held to being stationary on the countertop, establishing the initial layout of the preparation area.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "hands are above counter",
+                            "objects": [
+                                "hands",
+                                "counter"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "vegetables are held by hands",
+                            "objects": [
+                                "vegetables",
+                                "hands"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "counter",
+                            "affordance_types": [
+                                "support_surface"
+                            ],
+                            "reasons": "The counter is flat, stable, and at a convenient height to support objects."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "hands",
+                        "action": "are releasing their grip and lowering items",
+                        "patient": "vegetables_and_items",
+                        "causal_effect_on_patient": "are being gently placed onto the counter as the upward supportive force from the hands is removed and replaced by the normal force from the counter.",
+                        "causal_effect_on_environment": "The countertop is becoming populated with ingredients, defining the user's workspace.",
+                        "causal_spatial_precondition": "The items must be positioned directly above the solid surface of the counter before being released, so that gravity pulls them onto the supporting surface.",
+                        "causal_affordance_focus_detail": "The 'support_surface' affordance of the counter is utilized by bringing the items into contact with it. The counter then provides a normal force equal and opposite to the gravitational force on the items, allowing them to rest stably."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The flat, horizontal top surface of the kitchen counter.",
+                        "affordance_type": "support_surface",
+                        "causal_role": "provider_of_normal_force"
+                    }
+                },
+                {
+                    "action_description": "The user's hands pull open a cutlery drawer, revealing organized utensils, and the right hand grasps a knife with a grey handle.",
+                    "state_change_description": "The knife is lifted from the drawer organizer, transitioning from a stored state to being an actively held tool.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "drawer is open",
+                            "objects": [
+                                "drawer",
+                                "kitchen_cabinet"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "knife is in drawer",
+                            "objects": [
+                                "knife",
+                                "drawer"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "hand is in drawer",
+                            "objects": [
+                                "hand",
+                                "drawer"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "knife_handle",
+                            "affordance_types": [
+                                "graspable"
+                            ],
+                            "reasons": "The handle is shaped and textured to allow a secure grip for manipulation."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "hand",
+                        "action": "is applying a gripping force",
+                        "patient": "knife_handle",
+                        "causal_effect_on_patient": "is being enclosed by the fingers and palm, allowing its position and orientation to be controlled by the user's arm.",
+                        "causal_effect_on_environment": "The knife is being removed from its storage slot, making it available for the cooking task.",
+                        "causal_spatial_precondition": "The fingers must wrap around the handle to exert a clamping force, enabling the user to lift and control the entire knife.",
+                        "causal_affordance_focus_detail": "The 'graspable' affordance of the handle is exploited. Its ergonomic shape allows for a power grip, where forces are applied by the fingers towards the palm, providing secure control over the tool."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The shaped grey handle of the knife.",
+                        "affordance_type": "grabbable_handle",
+                        "causal_role": "lever_for_tool_manipulation"
+                    }
+                }
+            ]
+        },
+        {
+            "step_id": 3,
+            "step_goal": "Wash the cucumber and carrot in the sink under running water.",
+            "rationale": "This is a crucial hygiene step to remove potential pesticides, dirt, and bacteria from the surface of the vegetables before they are cut and prepared for consumption. It ensures the food is safe to eat.",
+            "preconditions": [
+                "Vegetables are on the counter next to the sink.",
+                "Sink and faucet are operational."
+            ],
+            "expected_effects": [
+                "Vegetable surfaces are clean.",
+                "Vegetables are wet and ready for drying or immediate chopping."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "sink",
+                    "faucet"
+                ],
+                "materials": [
+                    "cucumber",
+                    "carrot",
+                    "water"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "clean vegetables are on counter",
+                    "objects": [
+                        "cucumber",
+                        "carrot",
+                        "counter"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "carrot",
+                    "affordance_types": [
+                        "clean",
+                        "ready_to_cut"
+                    ],
+                    "reasons": "The carrot has been washed, making it hygienically safe for the next step of processing (cutting)."
+                }
+            ],
+            "predicted_next_actions": [
+                "Place vegetables onto the cutting board",
+                "Retrieve a pan for cooking"
+            ],
+            "causal_challenge_question": "What if the sink drain was clogged?",
+            "expected_challenge_outcome": "Water would quickly fill the sink basin. The user would have to perform the task quickly before the basin overflows or stop, turn off the water, and address the clog before being able to proceed with washing.",
+            "failure_handling": {
+                "reason": "The user loses their grip on a wet, slippery vegetable, and it falls onto the floor.",
+                "recovery_strategy": "The user must pick up the vegetable, thoroughly re-wash it in the sink to remove floor contaminants, and then continue, possibly using a firmer grip."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user holds a cucumber with both hands under a stream of water from the faucet, rubbing its surface with their fingers.",
+                    "state_change_description": "Surface contaminants are being dislodged from the cucumber's skin by the combination of mechanical friction from the hands and the flow of water.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "cucumber is under water stream",
+                            "objects": [
+                                "cucumber",
+                                "water_stream"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "hands are in contact with cucumber",
+                            "objects": [
+                                "hands",
+                                "cucumber"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "cucumber is positioned over sink basin",
+                            "objects": [
+                                "cucumber",
+                                "sink_basin"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "water_stream",
+                            "affordance_types": [
+                                "rinsing_agent"
+                            ],
+                            "reasons": "The moving water has kinetic energy and solvent properties capable of carrying away loose particles."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "hands_and_water_stream",
+                        "action": "are applying shear and pressure forces",
+                        "patient": "cucumber_surface",
+                        "causal_effect_on_patient": "is undergoing surface cleaning as dirt particles are mechanically loosened and transported away.",
+                        "causal_effect_on_environment": "Water is splashing within the sink basin, and dirt is being washed down the drain.",
+                        "causal_spatial_precondition": "The vegetable's surface must be directly in the path of the water stream and in frictional contact with the hands for both cleaning actions to be effective.",
+                        "causal_affordance_focus_detail": "The 'rinsing_agent' affordance of the water is used to carry away debris that is dislodged by the frictional force applied by the user's hands rubbing the vegetable's surface."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The moving stream of water flowing from the faucet.",
+                        "affordance_type": "rinsing_agent",
+                        "causal_role": "transport_medium_for_contaminants"
+                    }
+                }
+            ]
+        },
+        {
+            "step_id": 4,
+            "step_goal": "Retrieve a frying pan from a low cupboard and place it on the stovetop.",
+            "rationale": "This step proactively prepares the cooking vessel. By placing the pan on the stove now, it clears the cupboard and positions the pan for easy access once the ingredients are chopped, streamlining the workflow from preparation to cooking.",
+            "preconditions": [
+                "The chopping preparation is underway or paused.",
+                "The stovetop has a free burner.",
+                "A frying pan is located within a storage cupboard."
+            ],
+            "expected_effects": [
+                "A frying pan is positioned on a stovetop burner, ready to be heated."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "frying_pan",
+                    "stovetop"
+                ],
+                "materials": []
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "frying_pan is on stovetop",
+                    "objects": [
+                        "frying_pan",
+                        "stovetop"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "frying_pan",
+                    "affordance_types": [
+                        "heatable",
+                        "container_for_cooking"
+                    ],
+                    "reasons": "By being placed on the stovetop, the pan is now in the correct location to have heat applied to it and to receive ingredients."
+                }
+            ],
+            "predicted_next_actions": [
+                "Return to chopping vegetables",
+                "Turn on the stovetop burner"
+            ],
+            "causal_challenge_question": "What if the frying pan handle was loose?",
+            "expected_challenge_outcome": "Lifting the pan would be unstable and dangerous. The pan's body could unexpectedly rotate or detach, potentially causing damage or injury. The user would need to use a second hand to support the body of the pan from underneath to transport it safely.",
+            "failure_handling": {
+                "reason": "The user misjudges the placement and the pan is unstable on the stovetop grate.",
+                "recovery_strategy": "The user would immediately notice the instability (wobbling) and would lift the pan slightly to reposition it until it sits flat and securely on the grate."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user's hands are inside a low kitchen cupboard, grasping the handle of a black frying pan that is stored among other cookware.",
+                    "state_change_description": "The user has achieved a secure grip on the pan's handle, initiating the action of retrieving it from storage.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "hands are inside cupboard",
+                            "objects": [
+                                "hands",
+                                "cupboard"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "pan is inside cupboard",
+                            "objects": [
+                                "frying_pan",
+                                "cupboard"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "hands are in contact with pan handle",
+                            "objects": [
+                                "hands",
+                                "frying_pan_handle"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "frying_pan_handle",
+                            "affordance_types": [
+                                "graspable",
+                                "liftable"
+                            ],
+                            "reasons": "The handle is designed as a lever to be gripped by a hand to lift and manipulate the entire mass of the pan."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "hands",
+                        "action": "are applying a power grip",
+                        "patient": "frying_pan_handle",
+                        "causal_effect_on_patient": "is being secured, allowing transfer of lifting force and torque from the user's arm to the entire pan object.",
+                        "causal_effect_on_environment": "The frying pan is about to be moved from its stored location.",
+                        "causal_spatial_precondition": "The user's fingers and palm must fully enclose the handle to maximize surface contact and friction, ensuring the pan does not slip or rotate unexpectedly when lifted.",
+                        "causal_affordance_focus_detail": "The 'graspable' nature of the handle allows the user to apply torque to maneuver the pan out from among the other cookware and lifting force to overcome gravity."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The long, protruding handle of the frying pan.",
+                        "affordance_type": "grabbable_handle",
+                        "causal_role": "lever_for_manipulation"
+                    }
+                }
+            ]
+        },
+        {
+            "step_id": 5,
+            "step_goal": "Slice the entire washed zucchini into circular pieces.",
+            "rationale": "This step processes the whole vegetable into a more manageable and uniformly sized form (slices). This is a necessary precursor to dicing and ensures that the final pieces will cook evenly.",
+            "preconditions": [
+                "A clean zucchini is on the cutting board.",
+                "A suitable knife is available.",
+                "The cutting board is stable on the counter."
+            ],
+            "expected_effects": [
+                "The single zucchini is transformed into a plurality of circular slices."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "knife",
+                    "cutting_board"
+                ],
+                "materials": [
+                    "zucchini"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "zucchini slices are on cutting board",
+                    "objects": [
+                        "zucchini_slices",
+                        "cutting_board"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "zucchini",
+                    "affordance_types": [
+                        "sliced",
+                        "ready_for_dicing"
+                    ],
+                    "reasons": "The zucchini's form has been changed into slices, which now afford being stacked and diced into smaller pieces."
+                }
+            ],
+            "predicted_next_actions": [
+                "Dice the zucchini slices",
+                "Transfer slices to the pan"
+            ],
+            "causal_challenge_question": "What if the knife was dull?",
+            "expected_challenge_outcome": "A dull knife would require significantly more downward force to cut the zucchini. Instead of cleanly shearing the vegetable's fibers, it would crush them, resulting in messy, uneven slices and increasing the risk of the knife slipping off the rounded surface.",
+            "failure_handling": {
+                "reason": "The user's guiding hand (holding the zucchini) is positioned unsafely, with fingers extended towards the blade.",
+                "recovery_strategy": "The user should pause and reposition their guiding hand into a 'claw grip,' with fingertips tucked under and knuckles parallel to the blade. This standard safety technique protects the fingers from the knife."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user is performing a slicing motion, with their right hand pushing a knife downwards and forwards through a zucchini, while their left hand stabilizes the zucchini on a green cutting board.",
+                    "state_change_description": "A new circular slice of zucchini is being fully severed from the main body of the vegetable.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "knife blade is in contact with and perpendicular to the zucchini",
+                            "objects": [
+                                "knife_blade",
+                                "zucchini"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "zucchini is on cutting board",
+                            "objects": [
+                                "zucchini",
+                                "cutting_board"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "left hand is stabilizing zucchini",
+                            "objects": [
+                                "left_hand",
+                                "zucchini"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "knife",
+                            "affordance_types": [
+                                "cutting_active",
+                                "sharp"
+                            ],
+                            "reasons": "The knife is visibly cleaving the vegetable with minimal deformation, which implies its edge is sharp enough to exceed the material's shear strength."
+                        },
+                        {
+                            "object_name": "zucchini",
+                            "affordance_types": [
+                                "cuttable"
+                            ],
+                            "reasons": "The zucchini is soft enough to be partitioned by the force exerted by the knife."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "knife_blade_edge",
+                        "action": "is applying concentrated pressure",
+                        "patient": "zucchini_flesh",
+                        "causal_effect_on_patient": "is undergoing shear failure and fracture along the plane of the blade.",
+                        "causal_effect_on_environment": "A distinct slice of zucchini is being created and separated from the larger piece.",
+                        "causal_spatial_precondition": "The knife edge, being a wedge of extremely small surface area, must be pressed perpendicularly against the zucchini to concentrate the applied force effectively and initiate a cut.",
+                        "causal_affordance_focus_detail": "The 'cutting_edge' of the knife concentrates the force from the user's hand into a very small area, creating pressure that exceeds the shear strength of the zucchini's cellular structure, causing it to separate cleanly."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The sharpened bottom edge of the knife blade.",
+                        "affordance_type": "cutting_edge",
+                        "causal_role": "point_of_force_concentration"
+                    }
+                }
+            ]
+        },
+        {
+            "step_id": 6,
+            "step_goal": "Dice a portion of the zucchini slices into small cubes.",
+            "rationale": "To achieve a finer texture and promote faster, more even cooking, the previously created slices are further processed into smaller, diced pieces. This is the final preparation step for this ingredient before cooking.",
+            "preconditions": [
+                "Zucchini has been sliced and is resting on the cutting board."
+            ],
+            "expected_effects": [
+                "A portion of the zucchini slices are transformed into small, cubed pieces, ready for cooking."
+            ],
+            "tool_and_material_usage": {
+                "tools": [
+                    "knife",
+                    "cutting_board"
+                ],
+                "materials": [
+                    "zucchini_slices"
+                ]
+            },
+            "spatial_postconditions_detail": [
+                {
+                    "relation": "diced zucchini is on cutting board",
+                    "objects": [
+                        "diced_zucchini",
+                        "cutting_board"
+                    ],
+                    "truth": true
+                },
+                {
+                    "relation": "some zucchini slices remain on cutting board",
+                    "objects": [
+                        "zucchini_slices",
+                        "cutting_board"
+                    ],
+                    "truth": true
+                }
+            ],
+            "affordance_postconditions_detail": [
+                {
+                    "object_name": "zucchini_slices",
+                    "affordance_types": [
+                        "diced",
+                        "ready_to_cook"
+                    ],
+                    "reasons": "The zucchini has been processed into its final, small form, making it ready to be added to a pan for cooking."
+                }
+            ],
+            "predicted_next_actions": [
+                "Continue dicing remaining slices",
+                "Scrape all diced zucchini into the pan",
+                "Begin preparing the next vegetable (carrot)"
+            ],
+            "causal_challenge_question": "What if the user attempted to dice a single slice at a time instead of a small stack?",
+            "expected_challenge_outcome": "The process would be much slower and less efficient. While safer, it would require significantly more individual knife motions to process the same amount of zucchini, increasing the overall task time.",
+            "failure_handling": {
+                "reason": "The stack of slices is too high and becomes unstable, sliding apart during a cut.",
+                "recovery_strategy": "The user should pause, use the side of the knife blade to regroup the scattered slices, create a shorter, more stable stack, and then proceed with the dicing motion with more control."
+            },
+            "critical_frames": [
+                {
+                    "action_description": "The user has arranged a small stack of zucchini slices and is now cutting them perpendicularly, transforming the stack of rounds into a series of strips.",
+                    "state_change_description": "The circular zucchini slices are being partitioned into long, rectangular strips in preparation for the final dicing cut.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "zucchini slices are stacked",
+                            "objects": [
+                                "zucchini_slices"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "knife is cutting through stacked slices",
+                            "objects": [
+                                "knife",
+                                "zucchini_slices"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "stacked_slices",
+                            "affordance_types": [
+                                "cuttable"
+                            ],
+                            "reasons": "The stack is low enough to be stable under the pressure of the knife, allowing for a controlled cut through multiple layers at once."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "knife_blade",
+                        "action": "is applying downward force across multiple layers",
+                        "patient": "stacked_zucchini_slices",
+                        "causal_effect_on_patient": "are undergoing simultaneous shear failure, creating parallel cuts through the stack.",
+                        "causal_effect_on_environment": "The stack of round slices is being transformed into a stack of long strips.",
+                        "causal_spatial_precondition": "The slices must be stacked neatly to ensure the knife can pass through them vertically, creating uniform strips. The stabilizing hand must apply gentle downward pressure to prevent the layers from sliding.",
+                        "causal_affordance_focus_detail": "By stacking the slices, the user exploits the 'cuttable' affordance of each slice simultaneously, increasing the efficiency of the dicing task by processing multiple pieces with a single knife stroke."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The assembled, stable stack of several zucchini slices.",
+                        "affordance_type": "stackable_and_cuttable_group",
+                        "causal_role": "workpiece_for_efficient_batch_processing"
+                    }
+                },
+                {
+                    "action_description": "Using a rapid chopping motion, the user is cutting across the previously made zucchini strips, creating small, diced pieces.",
+                    "state_change_description": "The zucchini strips are being severed into small cubes, completing the dicing process.",
+                    "spatial_preconditions": [
+                        {
+                            "relation": "knife is moving in a rapid up-and-down motion",
+                            "objects": [
+                                "knife"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "knife tip is in contact with cutting board",
+                            "objects": [
+                                "knife_tip",
+                                "cutting_board"
+                            ],
+                            "truth": true
+                        },
+                        {
+                            "relation": "zucchini strips are under the knife blade",
+                            "objects": [
+                                "zucchini_strips",
+                                "knife_blade"
+                            ],
+                            "truth": true
+                        }
+                    ],
+                    "affordance_preconditions": [
+                        {
+                            "object_name": "knife",
+                            "affordance_types": [
+                                "chopping_active"
+                            ],
+                            "reasons": "The knife is being used in a rocking or tapping motion, leveraging its sharpness and weight to make quick, repetitive cuts."
+                        }
+                    ],
+                    "causal_chain": {
+                        "agent": "knife_blade_edge",
+                        "action": "is repeatedly impacting",
+                        "patient": "zucchini_strips",
+                        "causal_effect_on_patient": "are undergoing rapid, successive shear failures at different points along their length.",
+                        "causal_effect_on_environment": "A pile of small, diced zucchini cubes is forming on the cutting board.",
+                        "causal_spatial_precondition": "The knife tip acts as a pivot on the board, allowing the user to rock the handle up and down, bringing the blade edge into repetitive contact with the strips to make fast cuts.",
+                        "causal_affordance_focus_detail": "The user is employing a 'rocking chop' technique, using the knife's length and the hard 'cuttable_surface' of the board as a fixed base. This converts a simple up-and-down wrist motion into efficient, rapid dicing."
+                    },
+                    "affordance_hotspot": {
+                        "description": "The pointed tip of the knife.",
+                        "affordance_type": "pivot_point",
+                        "causal_role": "fulcrum_for_rocking_chop"
+                    }
+                }
+            ]
+        }
+    ]
+}

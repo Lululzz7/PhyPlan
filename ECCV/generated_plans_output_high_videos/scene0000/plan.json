@@ -1,0 +1,127 @@
+{
+    "scene_description": "The scene is a multi-functional open-plan living space, likely a studio apartment, with distinct zones for living, sleeping, and cooking. The living area features a large blue L-shaped sofa with an ottoman, a large wooden entertainment center with bookshelves, and a breakfast bar with stools. The flooring is white tile. A bicycle is parked near the sofa, creating an obstruction. The bedroom area, set on a large rug, contains a bed with a backpack and helmet on it, a wooden computer desk with an office chair, a white bedside table, and a small side table. A guitar on a stand is located in the walkway between the bedroom area and a bathroom. The kitchen area includes wooden cabinetry, a refrigerator, a microwave, and a countertop. A trash can is visible near an exterior door. An open doorway reveals a bathroom with a sink, toilet, and shower. The overall state of the apartment is lived-in and somewhat cluttered with personal items and recreational gear not in designated storage areas.",
+    "key_objects_for_planning": [
+        "bed",
+        "desk",
+        "office chair",
+        "bicycle",
+        "guitar",
+        "sofa",
+        "ottoman",
+        "backpack",
+        "refrigerator",
+        "entertainment center",
+        "breakfast bar"
+    ],
+    "high_level_goal": "Prepare the home for a relaxing evening by clearing recreational gear from common areas and organizing the main living and sleeping spaces.",
+    "steps": [
+        {
+            "step_id": 1,
+            "step_goal": "Relocate the bicycle from the living area to a less obtrusive location.",
+            "rationale": "The bicycle is the largest obstruction in the main living space. Moving it first clears a major pathway and is the most significant step towards making the area feel more organized and spacious.",
+            "navigation_and_manipulation": "Navigate from my current position to the bicycle parked next to the sofa. Securely grasp the bicycle's frame. Carefully wheel it across the tiled floor, moving past the breakfast bar, and position it against the wall near the exterior door in the kitchen area.",
+            "preconditions": [
+                "The bicycle is located next to the sofa.",
+                "A clear path exists to the wall near the exterior door."
+            ],
+            "expected_effects": [
+                "The main living area floor space is significantly clearer.",
+                "The bicycle is no longer a primary obstruction.",
+                "The bicycle is staged in a plausible storage/exit location."
+            ],
+            "failure_handling": {
+                "reason": "The robot fails to secure a stable grasp on the bicycle frame due to its complex geometry and orientation.",
+                "recovery_strategy": "Release the grasp. Back away slightly to get a new perception angle of the bicycle. Re-scan the object to identify a more stable grasp point, such as the horizontal top tube, and attempt the grasp-and-move action again."
+            }
+        },
+        {
+            "step_id": 2,
+            "step_goal": "Move the guitar from the walkway to a safer corner.",
+            "rationale": "The guitar is in a high-traffic area between the bedroom and bathroom, posing a risk of being knocked over. Moving it to a protected corner ensures its safety and clears the walkway.",
+            "navigation_and_manipulation": "Go to the corner near the bed where the guitar is on its stand. Grasp the guitar by its neck and support its body. Lift it carefully and carry it to the corner between the computer desk and the wall. Place it down gently, ensuring the stand is stable.",
+            "preconditions": [
+                "The guitar is on its stand in the walkway.",
+                "There is available space in the corner by the desk."
+            ],
+            "expected_effects": [
+                "The walkway between the bedroom and bathroom is clear.",
+                "The guitar is safely positioned in a low-traffic corner."
+            ],
+            "failure_handling": {
+                "reason": "The guitar is unstable on its stand after being placed in the new location and risks falling.",
+                "recovery_strategy": "Do not release the guitar. Detect the instability through force sensors. Adjust the placement by repositioning the legs of the stand until a stable configuration is confirmed. If stability cannot be achieved, move it to an alternative safe location, such as flat on the bed temporarily."
+            }
+        },
+        {
+            "step_id": 3,
+            "step_goal": "Clear the backpack and helmet from the bed.",
+            "rationale": "The bed is meant for rest and should be clear of clutter for a relaxing evening. Relocating these items to a more appropriate area, like the workspace, is essential for preparing the sleeping area.",
+            "navigation_and_manipulation": "Approach the bed. Grasp the backpack that is on the bed surface. Carry it over to the desk and place it on the floor next to the office chair. Return to the bed, grasp the helmet, and place it on the surface of the desk.",
+            "preconditions": [
+                "A backpack and helmet are on the bed.",
+                "There is space on and next to the desk."
+            ],
+            "expected_effects": [
+                "The bed surface is clear of recreational gear.",
+                "The backpack and helmet are consolidated in the work/storage area."
+            ],
+            "failure_handling": {
+                "reason": "The backpack is dropped during transit from the bed to the desk.",
+                "recovery_strategy": "Halt navigation. Scan the floor to locate the dropped backpack. Plan a new grasp action, pick up the backpack, and continue with the original goal of placing it next to the desk."
+            }
+        },
+        {
+            "step_id": 4,
+            "step_goal": "Move the backpack from the living room floor.",
+            "rationale": "A backpack on the floor is a tripping hazard and contributes to the overall sense of clutter. Moving it clears the walkway and consolidates personal items.",
+            "navigation_and_manipulation": "Go to the backpack on the floor next to the sofa. Grasp the backpack. Carry it to the office chair at the desk and place it on the seat of the chair.",
+            "preconditions": [
+                "A backpack is on the floor near the sofa."
+            ],
+            "expected_effects": [
+                "The floor space in the living area is clear of the backpack.",
+                "The backpack is off the floor and in the designated workspace/personal item area."
+            ],
+            "failure_handling": {
+                "reason": "The office chair is not empty, preventing placement of the backpack.",
+                "recovery_strategy": "Identify the object on the chair. If it's small and movable, relocate it to the desk surface. If it's not movable, place the backpack on the floor next to the other backpack by the desk as an alternative."
+            }
+        },
+        {
+            "step_id": 5,
+            "step_goal": "Reposition the ottoman in front of the sofa.",
+            "rationale": "The ottoman is part of the sofa set. Aligning it correctly with the sofa makes the living area look intentional and organized, and prepares it for use as a footrest.",
+            "navigation_and_manipulation": "Approach the blue ottoman. Position myself at its side. Push the ottoman across the rug until it is centered and aligned with the main section of the L-shaped sofa.",
+            "preconditions": [
+                "The ottoman is displaced from its position in front of the sofa."
+            ],
+            "expected_effects": [
+                "The sofa and ottoman are arranged as a cohesive unit.",
+                "The living room furniture arrangement is tidy and functional."
+            ],
+            "failure_handling": {
+                "reason": "The ottoman gets snagged on the edge of the rug or collides with the sofa leg during pushing.",
+                "recovery_strategy": "Stop pushing. Pull the ottoman back slightly to disengage it. Re-calculate the push trajectory to avoid the obstacle and then resume pushing it into the correct position."
+            }
+        },
+        {
+            "step_id": 6,
+            "step_goal": "Tuck the office chair under the desk.",
+            "rationale": "The office chair is pulled out, slightly impeding the space in the bedroom area. Tucking it in is a final tidying action that maximizes open space and makes the room look neater.",
+            "navigation_and_manipulation": "Go to the office chair at the computer desk, which now has a backpack on it. Grasp the back of the chair. Carefully push it forward until it is neatly tucked under the desk, without dislodging the backpack.",
+            "preconditions": [
+                "The office chair is pulled out from the desk."
+            ],
+            "expected_effects": [
+                "The office chair is no longer an obstruction.",
+                "The desk area is neat and compact.",
+                "The high-level goal is achieved."
+            ],
+            "failure_handling": {
+                "reason": "Pushing the chair causes the backpack placed on it in Step 4 to become unstable and start to fall.",
+                "recovery_strategy": "Immediately cease pushing. Use a free manipulator to stabilize the backpack on the seat. Once stable, resume pushing the chair with a slower, more controlled motion to prevent further instability."
+            }
+        }
+    ],
+    "sample_frames_dir": "/e2e-data/evad-tech-vla/luzheng/ICML/generated_plans_output_high_videos/scene0000/sampled_frames"
+}

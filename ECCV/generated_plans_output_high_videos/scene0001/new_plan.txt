@@ -1,0 +1,136 @@
+================================================================================
+Task Plan: Reconfigure the lounge into a functional presentation space with a designated audience area facing the whiteboard.
+================================================================================
+
+
+--- Step 1: Clear the central area in front of the whiteboard. ---
+
+  [Rationale]
+  To create an unobstructed viewing area for the audience and space for seating, the coffee tables and any stray chairs currently in front of the whiteboard must be moved.
+
+  [Navigation & Manipulation]
+  Navigate to the area directly in front of the whiteboard. Identify the reddish coffee table and the dark coffee table that are in the middle of the floor. Grasp the first table, carry it towards the wall with the framed bird pictures, and place it out of the way. Return for the second table and place it next to the first one to consolidate the clutter.
+
+  [Preconditions]
+  - The robot is in the lounge.
+  - Furniture is in its initial, disorganized state.
+
+
+  [Expected Effects]
+  - The floor space in front of the whiteboard is open.
+  - Two coffee tables have been relocated to the side of the room.
+
+
+  [Failure Handling]
+  - Reason: The robot cannot get a secure grip on a table to lift it.
+  - Recovery: Switch from a 'grasp and carry' to a 'push' maneuver. Carefully push the table across the carpet to its destination, ensuring the path is clear.
+
+
+--- Step 2: Position a sofa to serve as the primary audience seating. ---
+
+  [Rationale]
+  A sofa placed directly facing the whiteboard will anchor the new seating arrangement and provide the main block of seating for the audience.
+
+  [Navigation & Manipulation]
+  Approach the sofa located near the green cabinets. Grasp the sofa firmly. Carefully slide and rotate it into the cleared central space, ensuring it is centered and facing the whiteboard directly, leaving a few feet of space for viewing comfort.
+
+  [Preconditions]
+  - The area in front of the whiteboard is clear of tables (Step 1 complete).
+
+
+  [Expected Effects]
+  - A sofa is now correctly positioned as the central seating for a presentation.
+
+
+  [Failure Handling]
+  - Reason: The sofa is too heavy to move in a single action or snags on the carpet.
+  - Recovery: Attempt to 'walk' the sofa by pushing one end forward a short distance, then the other, alternating until it is in the desired position. This breaks down the movement into smaller, more manageable pushes.
+
+
+--- Step 3: Arrange two armchairs to flank the central sofa. ---
+
+  [Rationale]
+  Placing armchairs on either side of the sofa expands the seating capacity and creates a more engaging, semi-circular layout for the audience.
+
+  [Navigation & Manipulation]
+  Go to the cluster of armchairs near the double doors. Grasp the first armchair (ignoring the one with the backpack). Carry it to the left side of the presentation sofa and place it at a slight angle facing inward towards the whiteboard. Go back for a second armchair and repeat the process on the right side of the sofa.
+
+  [Preconditions]
+  - The main sofa is in its presentation position (Step 2 complete).
+  - At least two armchairs are available for relocation.
+
+
+  [Expected Effects]
+  - The audience seating area is now a semi-circle composed of one sofa and two armchairs.
+
+
+  [Failure Handling]
+  - Reason: The robot's path is blocked by other furniture while carrying an armchair.
+  - Recovery: Place the armchair down temporarily. Move the obstructing piece of furniture (e.g., another chair) to create a clear path. Pick the armchair back up and complete the navigation. Move the obstructing object back if necessary.
+
+
+--- Step 4: Reposition a table to serve as a presenter's lectern. ---
+
+  [Rationale]
+  The presenter requires a surface for notes or a laptop. One of the relocated coffee tables can be repurposed for this function.
+
+  [Navigation & Manipulation]
+  Navigate back to the coffee tables that were moved aside. Grasp one of the reddish coffee tables. Carry it to the front of the room and place it to the side of the whiteboard, leaving the center clear but providing the presenter with an accessible surface.
+
+  [Preconditions]
+  - The audience seating is arranged (Step 3 complete).
+  - A coffee table is available from the consolidated pile.
+
+
+  [Expected Effects]
+  - A table is now positioned as a lectern for the presenter.
+
+
+  [Failure Handling]
+  - Reason: The lectern table is placed in a position that obstructs the audience's view of the whiteboard.
+  - Recovery: Re-evaluate the placement. Grasp the table again and move it further to the side or closer to the wall, ensuring the direct line of sight from all seats to the whiteboard is clear.
+
+
+--- Step 5: Tidy the remaining furniture into a secondary conversational area. ---
+
+  [Rationale]
+  To complete the room's transformation, the remaining unused furniture should be organized neatly, creating a clean look and clear pathways throughout the room.
+
+  [Navigation & Manipulation]
+  Go to the remaining sofas and armchairs scattered in the room. Move them one by one to the corner near the entrance, arranging them in a square formation around the remaining dark coffee table to form a second, distinct seating zone. Ensure all major walkways are now wide and unobstructed.
+
+  [Preconditions]
+  - The presentation area is fully set up (Step 4 complete).
+
+
+  [Expected Effects]
+  - The entire room is now organized into two functional zones: a presentation area and a secondary lounge area.
+  - All pathways are clear of obstructions.
+
+
+  [Failure Handling]
+  - Reason: There is insufficient space to neatly arrange the remaining furniture in the designated corner.
+  - Recovery: Adjust the arrangement to be more compact. Push the armchairs closer to the sofa. If necessary, move the secondary coffee table against the wall to create more floor space for the chairs.
+
+
+--- Step 6: Clean the whiteboard surface. ---
+
+  [Rationale]
+  The whiteboard is the focal point of the presentation and must be clean and ready for the presenter to use.
+
+  [Navigation & Manipulation]
+  Approach the whiteboard at the front of the presentation area. Assuming the possession of a cleaning tool, execute a 'surface wipe' action, moving systematically from top to bottom across the entire face of the whiteboard.
+
+  [Preconditions]
+  - The room is fully rearranged (Step 5 complete).
+
+
+  [Expected Effects]
+  - The whiteboard is clean and ready for use.
+  - The high-level goal is achieved.
+
+
+  [Failure Handling]
+  - Reason: The whiteboard has residual marks or permanent ink that cannot be removed by a standard wipe.
+  - Recovery: Cease the wiping action to avoid smearing the marks further. Log the state of the whiteboard as 'partially uncleanable' and consider the task complete to the best of the robot's ability.
+

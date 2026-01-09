@@ -1,0 +1,20 @@
+{
+    "source_scene_id": "scene0005",
+    "source_videos": [
+        "scene0005_00.mp4",
+        "scene0005_01.mp4"
+    ],
+    "processing_timestamp_utc": "2025-11-27T08:05:49.529757Z",
+    "extraction_parameters": {
+        "total_max_frames": 50,
+        "resize_dim": null,
+        "jpeg_quality": 100
+    },
+    "model_used": "gemini-2.5-pro",
+    "saved_images_directory": "generated_plans_output_high_videos/scene0005/sampled_frames",
+    "api_usage": {
+        "prompt_tokens": 16001,
+        "completion_tokens": 4354,
+        "total_tokens": 20355
+    }
+}
